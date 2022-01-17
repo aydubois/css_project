@@ -1,0 +1,65 @@
+:root{
+    --width-wall:100px;
+    --heigth-wall-n:25%;
+    --width-pipe-top:200px;
+    --width-pipe-down:170px;
+    --width-wall-gift:93px;
+
+
+    --color-head:#c84c0d;
+    --color-body:sandybrown;
+    --color-foot:black;
+    --green1:#80d010;
+    --green2:#00a800;
+    --bg:#fc9838;
+    --question-mark:#c84c0d;
+}
+
+.all{
+    width: 1600px;
+    height: 600px;
+}
+.all .ground{
+    width: 100%;
+    height: 17%;
+    background-color: brown;
+}
+.all .landscape{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(73, 196, 233);
+    position: relative;
+}
+.wall, .giftwall, .pipe, .monster1{
+    position: absolute;
+}
+.wall,.giftwall{
+    top: 1rem;
+}
+.wall0{
+    left: 28rem;
+}
+.wall1{
+    left: 34rem;
+}
+.wall2{
+    left: 40rem;
+}
+.wall3{
+    left: 52rem;
+}
+.giftwall{
+    left:46rem;
+}
+.pipe{
+    top: 11.3rem;
+    left: 80rem;
+}
+.monster1{
+    top: 24rem;
+    left: 8rem;
+}
+.mountain{
+    top: 21.7rem;
+    left: 8rem;
+}
