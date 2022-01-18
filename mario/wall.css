@@ -1,35 +1,36 @@
 
-
-/* body{
-    display: flex;
-} */
-*{
-    box-sizing: border-box;
-}
-.w20{
-    width: 20%;
-}
-.w30{
-    width: 30%;
-}
-.w40{
-    width: 40%;
-}
-.w50{
-    width: 50%;
-}
-.w60{
-    width: 60%;
-}
 .wall{
-    width: var(--width-wall);
-    height: var(--width-wall);
-    display: flex;
-    flex-wrap: wrap;
-    background-color: brown;
-    border-top: 6px solid sandybrown;
-}
-.wall > div {
-    height: var(--heigth-wall-n);
-    border:3px solid black;
+    --brick-bl:0 var(--pixel) var(--color-black),
+    var(--pixel) 0 var(--color-black),
+    var(--pixel) var(--pixel) var(--color-black),
+    0 var(--pixel-minus) var(--color-black),
+    var(--pixel) var(--pixel-minus) var(--color-black);
+
+    --brick-bm: calc(var(--pixel)*3) 0 var(--color-brown), calc(var(--pixel)*5) 0 var(--color-brown), calc(var(--pixel)*7) 0 var(--color-brown), calc(var(--pixel)*8) 0 var(--color-brown), calc(var(--pixel)*3) var(--pixel-minus) var(--color-black), calc(var(--pixel)*5) var(--pixel-minus) var(--color-black), calc(var(--pixel)*7) var(--pixel-minus) var(--color-black),calc(var(--pixel)*9) var(--pixel-minus) var(--color-black), calc(var(--pixel)*3) var(--pixel) var(--color-black), calc(var(--pixel)*5) var(--pixel) var(--color-black), calc(var(--pixel)*7) var(--pixel) var(--color-black),calc(var(--pixel)*9) var(--pixel) var(--color-black);
+
+    --brick-br:calc(var(--pixel)*11) 0 var(--color-brown),calc(var(--pixel)*13) 0 var(--color-brown), calc(var(--pixel)*11) var(--pixel) var(--color-black), calc(var(--pixel)*13) var(--pixel) var(--color-black),calc(var(--pixel)*11) var(--pixel-minus) var(--color-black), calc(var(--pixel)*13) var(--pixel-minus) var(--color-black);
+
+    --brick-ml:0 calc(var(--pixel-minus)*4) var(--color-brown),0 calc(var(--pixel-minus)*5) var(--color-black),calc(var(--pixel)*3) calc(var(--pixel-minus)*4) var(--color-brown),calc(var(--pixel)*4) calc(var(--pixel-minus)*4) var(--color-brown),calc(var(--pixel)*3) calc(var(--pixel-minus)*5) var(--color-black),calc(var(--pixel)*5) calc(var(--pixel-minus)*4) var(--color-black),calc(var(--pixel)*5) calc(var(--pixel-minus)*5) var(--color-black);
+
+    --brick-mbr:calc(var(--pixel)*8) calc(var(--pixel-minus)*4) var(--color-brown),calc(var(--pixel)*11) calc(var(--pixel-minus)*4) var(--color-brown),calc(var(--pixel)*12) calc(var(--pixel-minus)*4) var(--color-brown),calc(var(--pixel)*13) calc(var(--pixel-minus)*4) var(--color-black),calc(var(--pixel)*13) calc(var(--pixel-minus)*5) var(--color-black),calc(var(--pixel)*10) calc(var(--pixel-minus)*5) var(--color-black),calc(var(--pixel)*7) calc(var(--pixel-minus)*5) var(--color-black);
+
+    --brick-mtl:0 calc(var(--pixel-minus)*8) var(--color-brown),
+    0 calc(var(--pixel-minus)*9) var(--color-black),var(--pixel) calc(var(--pixel-minus)*9) var(--color-black),var(--pixel) calc(var(--pixel-minus)*8) var(--color-black);
+
+    --brick-mtm:calc(var(--pixel)*4) calc(var(--pixel-minus)*8) var(--color-brown),calc(var(--pixel)*7) calc(var(--pixel-minus)*8) var(--color-brown),calc(var(--pixel)*8) calc(var(--pixel-minus)*8) var(--color-brown),calc(var(--pixel)*9) calc(var(--pixel-minus)*8) var(--color-black),
+    calc(var(--pixel)*9) calc(var(--pixel-minus)*9) var(--color-black),
+    calc(var(--pixel)*6) calc(var(--pixel-minus)*9) var(--color-black),
+    calc(var(--pixel)*3) calc(var(--pixel-minus)*9) var(--color-black);
+
+    --brick-mtr:calc(var(--pixel)*12) calc(var(--pixel-minus)*8) var(--color-brown),calc(var(--pixel)*13) calc(var(--pixel-minus)*8) var(--color-brown),calc(var(--pixel)*12) calc(var(--pixel-minus)*9) var(--color-black),calc(var(--pixel)*13) calc(var(--pixel-minus)*9) var(--color-black) ;
+
+    --brick-tlr:0 calc(var(--pixel-minus)*11) var(--color-brown),calc(var(--pixel)*3) calc(var(--pixel-minus)*11) var(--color-brown),calc(var(--pixel)*4) calc(var(--pixel-minus)*11) var(--color-brown),calc(var(--pixel)*5) calc(var(--pixel-minus)*11) var(--color-black),calc(var(--pixel)*8) calc(var(--pixel-minus)*11) var(--color-brown),calc(var(--pixel)*11) calc(var(--pixel-minus)*11) var(--color-brown),calc(var(--pixel)*12) calc(var(--pixel-minus)*11) var(--color-brown),calc(var(--pixel)*13) calc(var(--pixel-minus)*11) var(--color-black);
+
+    --brick-tt:calc(var(--pixel)*13) calc(var(--pixel-minus)*12) var(--color-brown-soft),calc(var(--pixel)*10) calc(var(--pixel-minus)*12) var(--color-brown-soft),calc(var(--pixel)*7) calc(var(--pixel-minus)*12) var(--color-brown-soft),calc(var(--pixel)*4) calc(var(--pixel-minus)*12) var(--color-brown-soft),calc(var(--pixel)*1) calc(var(--pixel-minus)*12) var(--color-brown-soft),0 calc(var(--pixel-minus)*12) var(--color-brown-soft);
+
+
+    width: calc(var(--pixel)*3);
+    height:calc(var(--pixel)*3);
+    background-color: var(--color-brown);
+    box-shadow: var(--brick-bl), var(--brick-bm), var(--brick-br), var(--brick-ml), var(--brick-mbr), var(--brick-mtl), var(--brick-mtm), var(--brick-mtr), var(--brick-tlr), var(--brick-tt);
 }

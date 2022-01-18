@@ -13,8 +13,40 @@
     --green2:#00a800;
     --bg:#fc9838;
     --question-mark:#c84c0d;
-}
 
+
+
+    --color-orange:#FC9738; /* mushroom, star, flower, mario */
+    --color-red:#D82800; /* mushroom, star, flower, mario */
+    --color-brown:#C84C0D; /* wall , goombas*/
+    --color-brown-soft:#FCBCB0; /* top wall, geant mushroom */
+    --color-beige-soft:#F4D4B4; /* body goombas */
+    --color-black:#000;
+    --color-white:#fff;
+    --color-green-dark:#00A800;
+    --color-green-soft:#80D011;
+    --color-green-odd:#887000; /* mario */
+    /* --width-case:16px;
+    --pixel:1px; */
+    /* --width-case:calc(10*16px);
+    --pixel:calc(10*1px);
+    --pixel-minus:-10px; */
+
+    --width-case:100px;
+    --pixel:calc(100px /16);
+    --pixel-minus:calc(-1*(100px /16));
+    
+
+}
+.pixel-test{
+    z-index: 15;
+    position: absolute;
+    top:calc(10* var(--pixel));
+    left: calc(var(--pixel)*40);
+    background-color:red;
+    width: var(--pixel);
+    height: var(--pixel);
+}
 .all{
     width: 1600px;
     height: 600px;
@@ -33,23 +65,25 @@
 .wall, .giftwall, .pipe, .monster1{
     position: absolute;
 }
-.wall,.giftwall{
-    top: 1rem;
-}
 .wall0{
-    left: 28rem;
+    left: calc(var(--pixel)*71);
+    top: calc(var(--pixel)*28);
 }
 .wall1{
-    left: 34rem;
+    left: calc(var(--pixel)*87);
+    top: calc(var(--pixel)*28);
 }
 .wall2{
-    left: 40rem;
+    left: calc(var(--pixel)*103);
+    top: calc(var(--pixel)*28);
 }
 .wall3{
-    left: 52rem;
+    left: calc(var(--pixel)*135);
+    top: calc(var(--pixel)*28);
 }
 .giftwall{
-    left:46rem;
+    left: calc(var(--pixel)*118);
+    top: calc(var(--pixel)*16);
 }
 .pipe{
     top: 11.3rem;
