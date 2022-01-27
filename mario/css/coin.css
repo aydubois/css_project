@@ -1,0 +1,36 @@
+.coin:before{
+    --px2:calc(var(--px)/2);
+
+    --bg:calc(var(--px2) + var(--px)) calc(var(--px2)* -1) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*3) calc(var(--px2)* -1) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*4) calc(var(--px2)* -1 + var(--pxm)) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2)) calc(var(--px2)* -1 + var(--pxm)) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--pxm)) calc(var(--px2)* -1 + var(--pxm)*3) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--pxm)) calc(var(--px2)* -1 + var(--pxm)*5) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--pxm)) calc(var(--px2)* -1 + var(--pxm)*7) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--pxm)) calc(var(--px2)* -1 + var(--pxm)*9) 0 calc(var(--px2)) var(--orange),
+    
+    calc(var(--px2) + var(--px)*5) calc(var(--px2)* -1 + var(--pxm)*3) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*5) calc(var(--px2)* -1 + var(--pxm)*5) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*5) calc(var(--px2)* -1 + var(--pxm)*7) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*5) calc(var(--px2)* -1 + var(--pxm)*9) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*4) calc(var(--px2)* -1 + var(--pxm)*11) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) ) calc(var(--px2)* -1 + var(--pxm)*11) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px) ) calc(var(--px2)* -1 + var(--pxm)*12) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*3 ) calc(var(--px2)* -1 + var(--pxm)*12) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*2 ) calc(var(--px2)* -1 + var(--pxm)*9) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*2 ) calc(var(--px2)* -1 + var(--pxm)*7) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*2 ) calc(var(--px2)* -1 + var(--pxm)*5) 0 calc(var(--px2)) var(--orange),
+    calc(var(--px2) + var(--px)*2 ) calc(var(--px2)* -1 + var(--pxm)*3) 0 calc(var(--px2)) var(--orange);
+
+    --bg-blue:calc(var(--px)*2 ) calc(var(--pxm)*4 ) 0 calc(var(--px)*2 ) var(--blue-dark),calc(var(--px)*2 ) calc(var(--pxm)*9 ) 0 calc(var(--px)*2 ) var(--blue-dark);
+    --bg-black:calc(var(--px)*4 ) calc(var(--pxm)*4 ) 0 calc(var(--px)*2 ) var(--black),calc(var(--px)*6 ) calc(var(--pxm)*8 ) 0 calc(var(--px)*2 ) var(--black),calc(var(--px)*6 ) calc(var(--pxm)*5 ) 0 calc(var(--px)*2 ) var(--black),calc(var(--px)*6) calc(var(--pxm)*11 ) 0 calc(var(--px) ) var(--black),calc(var(--px)*5) calc(var(--pxm)*12 ) 0 calc(var(--px) ) var(--black),calc(var(--px)*6) calc(var(--pxm)*2 ) 0 calc(var(--px) ) var(--black),calc(var(--px)*5) calc(var(--pxm)*1 ) 0 calc(var(--px) ) var(--black);
+    bottom:0;
+    left:0;
+    width: 103%;
+    height: 103%;
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    box-shadow: var(--bg),var(--bg-black), var(--bg-blue);
+}

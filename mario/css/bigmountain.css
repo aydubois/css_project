@@ -1,0 +1,185 @@
+.bigmountain{
+    /* width: calc(var(--w)/15*3.5);
+    height: calc(var(--w)*2);
+    background-color: transparent;
+    border-bottom: calc(var(--w)) solid var(--green-dark);
+    border-left: calc(var(--w)*1.2) solid transparent;
+    border-right: calc(var(--w)*1.2) solid transparent; */
+    /* border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent , red); */
+    width: calc(var(--w));
+    background-color: transparent;
+    border-bottom: calc(var(--w)*2) solid var(--green-dark);
+    border-left: calc(var(--w)*2) solid transparent;
+    border-right: calc(var(--w)*2) solid transparent;
+
+}
+.bigmountain:after{
+    --line-left: 
+                calc(var(--px)* -38 + var(--px)*6) calc(var(--px)*35 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -37 + var(--px)*6) calc(var(--px)*34 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -36 + var(--px)*6) calc(var(--px)*33 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -35 + var(--px)*6) calc(var(--px)*32 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -34 + var(--px)*6) calc(var(--px)*31 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -33 + var(--px)*6) calc(var(--px)*30 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -32 + var(--px)*6) calc(var(--px)*29 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -31 + var(--px)*6) calc(var(--px)*28 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -30 + var(--px)*6) calc(var(--px)*27 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -29 + var(--px)*6) calc(var(--px)*26 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -28 + var(--px)*6) calc(var(--px)*25 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -27 + var(--px)*6) calc(var(--px)*24 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -26 + var(--px)*6) calc(var(--px)*23 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -25 + var(--px)*6) calc(var(--px)*22 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -24 + var(--px)*6) calc(var(--px)*21 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -23 + var(--px)*6) calc(var(--px)*20 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -22 + var(--px)*6) calc(var(--px)*19 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -21 + var(--px)*6) calc(var(--px)*18 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -20 + var(--px)*6) calc(var(--px)*17 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -19 + var(--px)*6) calc(var(--px)*16 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -18  + var(--px)*6) calc(var(--px)*15 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -17 + var(--px)*6) calc(var(--px)*14 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -16 + var(--px)*6) calc(var(--px)*13 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -15 + var(--px)*6) calc(var(--px)*12 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -14 + var(--px)*6) calc(var(--px)*11 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -13 + var(--px)*6) calc(var(--px)*10 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -12 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -11 + var(--px)*6) calc(var(--px)*8 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -10 + var(--px)*6) calc(var(--px)*7 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -9 + var(--px)*6) calc(var(--px)*6 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -8 + var(--px)*6) calc(var(--px)*5 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -7 + var(--px)*6) calc(var(--px)*4 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -6 + var(--px)*6) calc(var(--px)*3 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -5 + var(--px)*6) calc(var(--px)*3 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -4 + var(--px)*6) calc(var(--px)*2 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -3 + var(--px)*6) calc(var(--px)*2 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* -2 + var(--px)*6) calc(var(--px)*2 + var(--pxm)*3) 0 0 black;
+                
+    --line-rigth:
+                calc(var(--px)* 41 + var(--px)*6) calc(var(--px)*35 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 40 + var(--px)*6) calc(var(--px)*34 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 39 + var(--px)*6) calc(var(--px)*33 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 38 + var(--px)*6) calc(var(--px)*32 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 37 + var(--px)*6) calc(var(--px)*31 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 36 + var(--px)*6) calc(var(--px)*30 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 35 + var(--px)*6) calc(var(--px)*29 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 34 + var(--px)*6) calc(var(--px)*28 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 33 + var(--px)*6) calc(var(--px)*27 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 32 + var(--px)*6) calc(var(--px)*26 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 31 + var(--px)*6) calc(var(--px)*25 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 30 + var(--px)*6) calc(var(--px)*24 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 29 + var(--px)*6) calc(var(--px)*23 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 28 + var(--px)*6) calc(var(--px)*22 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 27 + var(--px)*6) calc(var(--px)*21 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 26 + var(--px)*6) calc(var(--px)*20 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 25 + var(--px)*6) calc(var(--px)*19 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 24 + var(--px)*6) calc(var(--px)*18 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 23 + var(--px)*6) calc(var(--px)*17 + var(--pxm)*3) 0 0 black,
+    calc(var(--px)* 22 + var(--px)*6) calc(var(--px)*16 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 21 + var(--px)*6) calc(var(--px)*15 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 20 + var(--px)*6) calc(var(--px)*14 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 19 + var(--px)*6) calc(var(--px)*13 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 18 + var(--px)*6) calc(var(--px)*12 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 17 + var(--px)*6) calc(var(--px)*11 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 16 + var(--px)*6) calc(var(--px)*10 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 15 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 14 + var(--px)*6) calc(var(--px)*8 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 13 + var(--px)*6) calc(var(--px)*7 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 12 + var(--px)*6) calc(var(--px)*6 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 11 + var(--px)*6) calc(var(--px)*5 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 10 + var(--px)*6) calc(var(--px)*4 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 9 + var(--px)*6) calc(var(--px)*3 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 8 + var(--px)*6) calc(var(--px)*3 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 7 + var(--px)*6) calc(var(--px)*2 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 6 + var(--px)*6) calc(var(--px)*2 + var(--pxm)*3) 0 0 black,
+                calc(var(--px)* 5 + var(--px)*6) calc(var(--px)*2 + var(--pxm)*3) 0 0 black;
+    
+    --spot1:    calc(var(--px)*7 + var(--px)*6) calc(var(--px)*4 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*7 + var(--px)*6) calc(var(--px)*6 + var(--pxm)*3) 0 var(--px) var(--black),
+                calc(var(--px)*7 + var(--px)*6) calc(var(--px)*7 + var(--pxm)*3) 0 var(--px) var(--black),
+                calc(var(--px)*7 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*6) calc(var(--px)*8 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*6) calc(var(--px)*8 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*6) calc(var(--px)*10 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*6) calc(var(--px)*10 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*6) calc(var(--px)*11 + var(--pxm)*3) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*6) calc(var(--px)*11 + var(--pxm)*3) 0 0 var(--black);
+
+    --spot2:    calc(var(--px)*7 + var(--px)*14) calc(var(--px)*4 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*7 + var(--px)*14) calc(var(--px)*6 + var(--px)*14) 0 var(--px) var(--black),
+                calc(var(--px)*7 + var(--px)*14) calc(var(--px)*7 + var(--px)*14) 0 var(--px) var(--black),
+                calc(var(--px)*7 + var(--px)*14) calc(var(--px)*9 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*14) calc(var(--px)*8 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*14) calc(var(--px)*8 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*14) calc(var(--px)*9 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*14) calc(var(--px)*9 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*14) calc(var(--px)*10 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*14) calc(var(--px)*10 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--px)*14) calc(var(--px)*11 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--px)*14) calc(var(--px)*11 + var(--px)*14) 0 0 var(--black);
+
+    --spot3:    calc(var(--px)*7 + var(--pxm)*10) calc(var(--px)*4 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*7 + var(--pxm)*10) calc(var(--px)*6 + var(--px)*14) 0 var(--px) var(--black),
+                calc(var(--px)*7 + var(--pxm)*10) calc(var(--px)*7 + var(--px)*14) 0 var(--px) var(--black),
+                calc(var(--px)*7 + var(--pxm)*10) calc(var(--px)*9 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--pxm)*10) calc(var(--px)*8 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--pxm)*10) calc(var(--px)*8 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--pxm)*10) calc(var(--px)*9 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--pxm)*10) calc(var(--px)*9 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--pxm)*10) calc(var(--px)*10 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--pxm)*10) calc(var(--px)*10 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*4 + var(--pxm)*10) calc(var(--px)*11 + var(--px)*14) 0 0 var(--black),
+                calc(var(--px)*3 + var(--pxm)*10) calc(var(--px)*11 + var(--px)*14) 0 0 var(--black);
+    bottom:0;
+    left:0;
+    width: var(--px);
+    height:  var(--px);
+    content: "";
+    position: absolute;
+    background-color: black;
+    box-shadow:  var(--spot1),var(--spot2),var(--spot3),var(--line-left), var(--line-rigth);
+}
+
+
+.bigmountain:before{
+    --bg-left:  calc(var(--pxm)*4 + var(--px)*6) calc(var(--px)*3 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*6 + var(--px)*6) calc(var(--px)*4 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*7 + var(--px)*6) calc(var(--px)*5 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*8 + var(--px)*6) calc(var(--px)*6 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*9 + var(--px)*6) calc(var(--px)*7 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*10 + var(--px)*6) calc(var(--px)*8 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*11 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*12 + var(--px)*6) calc(var(--px)*10 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*13 + var(--px)*6) calc(var(--px)*11 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*14 + var(--px)*6) calc(var(--px)*12 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*15 + var(--px)*6) calc(var(--px)*13 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*16 + var(--px)*6) calc(var(--px)*14 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*17 + var(--px)*6) calc(var(--px)*15 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--pxm)*18 + var(--px)*6) calc(var(--px)*16 + var(--pxm)*3) 0 0 var(--green-dark);
+    --bg-right: calc(var(--px)*2 + var(--px)*6) calc(var(--px)*3 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*4 + var(--px)*6) calc(var(--px)*4 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*5 + var(--px)*6) calc(var(--px)*5 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*6 + var(--px)*6) calc(var(--px)*6 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*7 + var(--px)*6) calc(var(--px)*7 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*8 + var(--px)*6) calc(var(--px)*8 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*9 + var(--px)*6) calc(var(--px)*9 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*10 + var(--px)*6) calc(var(--px)*10 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*11 + var(--px)*6) calc(var(--px)*11 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*12 + var(--px)*6) calc(var(--px)*12 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*13 + var(--px)*6) calc(var(--px)*13 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*14 + var(--px)*6) calc(var(--px)*14 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*15 + var(--px)*6) calc(var(--px)*15 + var(--pxm)*3) 0 0 var(--green-dark),
+                calc(var(--px)*16 + var(--px)*6) calc(var(--px)*16 + var(--pxm)*3) 0 0 var(--green-dark);
+    --line-top: calc(var(--px)*5) calc(var(--pxm)*2) 0 0 var(--black),
+                calc(var(--px)*5) calc(var(--pxm)) 0 0 var(--green-dark);
+
+    bottom:0;
+    left:0;
+    width: calc(var(--px)*6);
+    height:  var(--px);
+    content: "";
+    position: absolute;
+    background-color: var(--green-dark);
+    box-shadow: var(--line-top),var(--bg-right),var(--bg-left);
+}

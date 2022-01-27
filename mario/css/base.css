@@ -1,0 +1,75 @@
+:root{
+    font-size: 1px;
+    --orange:rgb(252, 151, 56); /* mushroom, star, flower, mario */
+    --red:#D82800; /* mushroom, star, flower, mario */
+    --brown:#C84C0D; /* wall , goombas*/
+    --brown-soft:#FCBCB0; /* top wall, geant mushroom */
+    --beige-soft:#F4D4B4; /* body goombas */
+    --black:#000;
+    --white:#fff;
+    --green-dark:#00a800;
+    --green-soft:rgb(128, 208, 17);
+    --green-reflection:rgb(26,146,22);
+    --green-odd:#887000; /* mario */
+    --blue:#3cbcfc;
+    --blue-dark:rgb(92,148,252);
+    /* --sky:rgb(147,147,252); */
+
+
+    --w:32rem;
+    --wm:calc(-1*var(--w));
+    --px:calc(var(--w) /16);
+    --pxm:calc(-1*var(--px));
+    
+}
+*{
+    box-sizing: content-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* .container{
+    width: 1600px;
+    height: 1000px;
+    margin:auto;
+    border:1px solid black;
+    position: relative;
+} */
+
+div{
+    position:absolute;
+    width:var(--px);
+    height:var(--px);
+}
+section{
+    height: calc(var(--w)*15);
+    width: calc(var(--w)*208);
+    position: relative;
+    border:1px solid black;
+    background-color: var(--blue-dark);
+    box-shadow: 0 0 50rem 5rem #b3bdb3;
+
+}
+main{
+    position: absolute;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+.pixel{
+    position: absolute;
+    top: calc(var(--px)*28);
+    left: calc(var(--px)*71);
+    width: var(--px);
+    height: var(--px);
+    background-color: blue;
+    z-index: 2;
+}

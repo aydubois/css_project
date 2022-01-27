@@ -1,0 +1,43 @@
+.giftwall:before{
+    --question-mark:calc(var(--px)*8 - var(--px)*.5) calc(var(--pxm)*3 - var(--px)*.5) 0 calc(var(--px)*.5) var(--brown),
+    calc(var(--px)*8 - var(--px)*.5) calc(var(--pxm)*6 - var(--px)*.5) 0 calc(var(--px)*.5) var(--brown),
+    calc(var(--px)*8 ) calc(var(--pxm)*8 ) 0 0 var(--brown),
+    calc(var(--px)*10 - var(--px)*.5) calc(var(--pxm)*8 - var(--px)*.5) 0 calc(var(--px)*.5) var(--brown),
+    calc(var(--px)*10 - var(--px)*.5) calc(var(--pxm)*10 - var(--px)*.5) 0 calc(var(--px)*.5) var(--brown),
+    calc(var(--px)*5 - var(--px)*.5) calc(var(--pxm)*9 - var(--px)*.5) 0 calc(var(--px)*.5) var(--brown),
+    calc(var(--px)*5 - var(--px)*.5) calc(var(--pxm)*10 - var(--px)*.5) 0 calc(var(--px)*.5) var(--brown),
+    calc(var(--px)*5 ) calc(var(--pxm)*12 ) 0 0 var(--brown),
+    calc(var(--px)*6 ) calc(var(--pxm)*12 ) 0 0 var(--brown),
+    calc(var(--px)*7 ) calc(var(--pxm)*12 ) 0 0 var(--brown),
+    calc(var(--px)*8 ) calc(var(--pxm)*12 ) 0 0 var(--brown),
+    calc(var(--px)*9 ) calc(var(--pxm)*12 ) 0 0 var(--brown);
+    --question-mark-shadow:calc(var(--px)*9 - var(--px)*.5) calc(var(--pxm)*2 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*9 - var(--px)*.5) calc(var(--pxm)*5 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*9 - var(--px)*.5) calc(var(--pxm)*7 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*11 - var(--px)*.5) calc(var(--pxm)*7 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*11 - var(--px)*.5) calc(var(--pxm)*9 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*8 - var(--px)*.5) calc(var(--pxm)*11 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*6 - var(--px)*.5) calc(var(--pxm)*11 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*6 - var(--px)*.5) calc(var(--pxm)*9 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black),
+    calc(var(--px)*6 - var(--px)*.5) calc(var(--pxm)*8 - var(--px)*.5) 0 calc(var(--px)*.5) var(--black);
+
+    --points: calc(var(--px)*2) calc(var(--pxm)*2) 0 0 var(--black),
+    calc(var(--px)*2) calc(var(--pxm)*13) 0 0 var(--black),
+    calc(var(--px)*13) calc(var(--pxm)*13) 0 0 var(--black),
+    calc(var(--px)*13) calc(var(--pxm)*2) 0 0 var(--black);
+    
+    --background2:  calc(var(--w)/2 )  calc(var(--wm)/2 - var(--pxm))  0 calc(var(--w)/2 - var(--px)) var(--black);
+    --background3:  calc(var(--w)/2 - var(--px)*0.5 )  calc(var(--wm)/2 - var(--px)*0.5)  0 calc(var(--w)/2 - var(--px)*1.5) var(--brown);
+    --background4:  calc(var(--w)/2 - var(--px)*1.5 )  calc(var(--wm)/2 + var(--px)*0.5)  0 calc(var(--w)/2 - var(--px)*1.5) var(--brown);
+    --background4b:  calc(var(--w)/2 - var(--px)*.5 )  calc(var(--wm)/2 + var(--px)*0.5)  0 calc(var(--w)/2 - var(--px)*1.5) var(--orange);
+
+    
+    bottom:0;
+    left:0;
+    width: 103%;
+    height: 103%;
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    box-shadow: var(--question-mark),var(--question-mark-shadow), var(--points),var(--background4b),var(--background4),var(--background3),var(--background2);
+}

@@ -1,0 +1,59 @@
+
+.wall:before{
+    --background: calc(var(--w)/2 - var(--px)/2)  calc(var(--wm)/2 - var(--pxm)/2)  0 calc(var(--w)/2 - var(--px)/2) var(--black);
+    
+    --brick-bottom: var(--px) calc(var(--pxm)*2) 0 var(--px)  var(--brown),
+    calc(var(--px)*5) calc(var(--pxm)*2) 0 var(--px)  var(--brown),
+    calc(var(--px)*7) calc(var(--pxm)*2) 0 var(--px)  var(--brown),
+    calc(var(--px)*9) calc(var(--pxm)*2) 0 var(--px)  var(--brown),
+    calc(var(--px)*13) calc(var(--pxm)*2) 0 var(--px)  var(--brown),
+    calc(var(--px)*14) calc(var(--pxm)*2) 0 var(--px)  var(--brown);
+    
+    --brick-middle-b:var(--px) calc(var(--pxm)*6) 0 var(--px)  var(--brown),
+    calc(var(--px)*4) calc(var(--pxm)*6) 0 var(--px)  var(--brown),
+    calc(var(--px)*5) calc(var(--pxm)*6) 0 var(--px)  var(--brown),
+    calc(var(--px)*9) calc(var(--pxm)*6) 0 var(--px)  var(--brown),
+    calc(var(--px)*12) calc(var(--pxm)*6) 0 var(--px)  var(--brown),
+    calc(var(--px)*13) calc(var(--pxm)*6) 0 var(--px)  var(--brown);
+
+    --brick-middle-t: var(--px) calc(var(--pxm)*10) 0 var(--px)  var(--brown),
+    calc(var(--px)*5) calc(var(--pxm)*10) 0 var(--px)  var(--brown),
+    calc(var(--px)*7) calc(var(--pxm)*10) 0 var(--px)  var(--brown),
+    calc(var(--px)*9) calc(var(--pxm)*10) 0 var(--px)  var(--brown),
+    calc(var(--px)*13) calc(var(--pxm)*10) 0 var(--px)  var(--brown),
+    calc(var(--px)*14) calc(var(--pxm)*10) 0 var(--px)  var(--brown);
+
+
+    --brick-top:var(--px) calc(var(--pxm)*14) 0 var(--px)  var(--brown),
+    calc(var(--px)*4) calc(var(--pxm)*14) 0 var(--px)  var(--brown),
+    calc(var(--px)*5) calc(var(--pxm)*14) 0 var(--px)  var(--brown),
+    calc(var(--px)*9) calc(var(--pxm)*14) 0 var(--px)  var(--brown),
+    calc(var(--px)*12) calc(var(--pxm)*14) 0 var(--px)  var(--brown),
+    calc(var(--px)*13) calc(var(--pxm)*14) 0 var(--px)  var(--brown);
+
+    --brick-top-top:0 calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*1) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*2) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*3) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*4) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*5) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*6) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*7) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*8) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*9) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*10) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*11) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*12) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*13) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*14) calc(var(--pxm)*15) 0 0  var(--brown-soft),
+    calc(var(--px)*15) calc(var(--pxm)*15) 0 0  var(--brown-soft);
+    
+    bottom:0;
+    left:0;
+    width: 103%;
+    height: 103%;
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    box-shadow: var(--brick-top-top),var(--brick-top),var(--brick-middle-t),var(--brick-middle-b),var(--brick-bottom), var(--background);
+}

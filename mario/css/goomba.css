@@ -1,0 +1,80 @@
+.goomba:before{
+    --body: calc(var(--px)*3 + var(--px)/2) calc(var(--pxm)*3 + var(--pxm)/2)  0 calc(var(--px)*3 + var(--px)/2) var(--beige-soft);
+
+    --head-left: calc(var(--px)*0 )  calc(var(--pxm)*4 ) 0 0 var(--brown),
+            calc(var(--px)*0 )  calc(var(--pxm)*5 ) 0 0 var(--brown),
+            calc(var(--pxm)*2 )  calc(var(--pxm)*5 ) 0 var(--px) var(--brown),
+            calc(var(--pxm)*3 )  calc(var(--pxm)*6 ) 0 var(--px) var(--brown),
+            calc(var(--pxm)*2 )  calc(var(--pxm)*8 ) 0 var(--px) var(--brown),
+            calc(var(--px)*1 )  calc(var(--pxm)*8 ) 0 var(--px) var(--brown),
+            calc(var(--px)*1 )  calc(var(--pxm)*6 ) 0 var(--px) var(--brown),
+            calc(var(--px)*3 )  calc(var(--pxm)*8 ) 0 var(--px) var(--brown),
+            calc(var(--px)*3 )  calc(var(--pxm)*6 ) 0 var(--px) var(--brown),
+            calc(var(--pxm) )  calc(var(--pxm)*9 ) 0 var(--px) var(--brown),
+            0 calc(var(--pxm)*10 ) 0 var(--px) var(--brown),
+            calc(var(--px) )  calc(var(--pxm)*11 ) 0 var(--px) var(--brown),
+            calc(var(--px)*2 )  calc(var(--pxm)*12 ) 0 var(--px) var(--brown),
+            calc(var(--px)*3 )  calc(var(--pxm)*13 ) 0 var(--px) var(--brown);
+
+    --head-right: calc(var(--px)*7 )  calc(var(--pxm)*4 ) 0 0 var(--brown),
+            calc(var(--px)*7 )  calc(var(--pxm)*5 ) 0 0 var(--brown),
+            calc(var(--px)*9 )  calc(var(--pxm)*5 ) 0 var(--px) var(--brown),
+            calc(var(--px)*10 )  calc(var(--pxm)*6 ) 0 var(--px) var(--brown),
+            calc(var(--px)*9 )  calc(var(--pxm)*8 ) 0 var(--px) var(--brown),
+            calc(var(--px)*8 )  calc(var(--pxm)*9 ) 0 var(--px) var(--brown),
+            calc(var(--px)*7 )  calc(var(--pxm)*10 ) 0 var(--px) var(--brown),
+            calc(var(--px)*6 )  calc(var(--pxm)*11 ) 0 var(--px) var(--brown),
+            calc(var(--px)*5 )  calc(var(--pxm)*12 ) 0 var(--px) var(--brown),
+            calc(var(--px)*4 )  calc(var(--pxm)*13 ) 0 var(--px) var(--brown),
+            calc(var(--px)*4 )  calc(var(--pxm)*11 ) 0 var(--px) var(--brown),
+            calc(var(--px)*6 )  calc(var(--pxm)*9 ) 0 var(--px) var(--brown),
+            calc(var(--px)*6 )  calc(var(--pxm)*6 ) 0 var(--px) var(--brown);
+    --eyesbrow: calc(var(--pxm)*1 )  calc(var(--pxm)*10 )0 0 var(--black),
+            calc(var(--pxm)*0 )  calc(var(--pxm)*10 )0 0 var(--black),
+            calc(var(--px)*1 )  calc(var(--pxm)*9 )0 0 var(--black),
+            calc(var(--px)*1 )  calc(var(--pxm)*8 )0 0 var(--black),
+            calc(var(--px)*1 )  calc(var(--pxm)*7 )0 0 var(--black),
+            calc(var(--px)*2 )  calc(var(--pxm)*8 )0 0 var(--black),
+            calc(var(--px)*3 )  calc(var(--pxm)*8 )0 0 var(--black),
+            calc(var(--px)*4 )  calc(var(--pxm)*8 )0 0 var(--black),
+            calc(var(--px)*5 )  calc(var(--pxm)*8 )0 0 var(--black),
+            calc(var(--px)*6 )  calc(var(--pxm)*8 )0 0 var(--black),
+            calc(var(--px)*6 )  calc(var(--pxm)*7 )0 0 var(--black),
+            calc(var(--px)*6 )  calc(var(--pxm)*9 )0 0 var(--black),
+            calc(var(--px)*7 )  calc(var(--pxm)*10 )0 0 var(--black),
+            calc(var(--px)*8 )  calc(var(--pxm)*10 )0 0 var(--black);
+    --eyes: calc(var(--px)*1 )  calc(var(--pxm)*7 ) 0 var(--px) var(--beige-soft),       0 calc(var(--pxm)*9 ) 0 0 var(--beige-soft),
+            calc(var(--px)*6 )  calc(var(--pxm)*7 ) 0 var(--px) var(--beige-soft),     calc(var(--px)*7 ) calc(var(--pxm)*9 ) 0 0 var(--beige-soft);
+    bottom:0;
+    left:0;
+    width: 103%;
+    height: 103%;
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    box-shadow: var(--eyesbrow),var(--eyes),var(--head-left),var(--head-right),var(--body);
+}
+
+.goomba:after{
+    --left-foot:0 0 0 calc(var(--px)) var(--black),
+                calc(var(--px)*2)  0 0 0 var(--black),
+                calc(var(--px)*2) calc(var(--px)) 0 0 var(--black),
+                calc(var(--pxm)*1) calc(var(--pxm)*2) 0 0 var(--black),
+                calc(var(--pxm)*2) calc(var(--pxm)*2) 0 0 var(--black),
+                calc(var(--pxm)*2) calc(var(--pxm)*1) 0 0 var(--black),
+                calc(var(--pxm)*2) calc(var(--pxm)*0) 0 0 var(--black),
+                calc(var(--pxm)*2) calc(var(--px)*1) 0 0 var(--black),
+                calc(var(--pxm)*3) calc(var(--pxm)*1) 0 0 var(--black),
+                calc(var(--pxm)*3) calc(var(--pxm)*0) 0 0 var(--black);
+    --right-foot:calc(var(--px)*7 + var(--px)*.5) calc(var(--pxm)*1 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
+    calc(var(--px)*6 + var(--px)*.5) calc(var(--pxm)*0 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
+    calc(var(--px)*5) var(--px) 0 0 var(--black);
+    bottom:0;
+    left:0;
+    width: 103%;
+    height: 103%;
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    box-shadow: var(--left-foot),var(--right-foot);
+}

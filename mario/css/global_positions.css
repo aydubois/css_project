@@ -1,0 +1,167 @@
+
+/* Mountains */
+.mountain, .bigmountain{
+    bottom:calc(var(--w)*2);
+}
+.bgmnt1{
+    left: calc(var(--w)*2.4 );
+
+}
+.mnt1{
+    left: calc(var(--w)*17.2 );
+
+}
+/* Bush */
+.bush, .triplebush, .doublebush{
+    bottom: calc(var(--w)*1.5);
+}
+.tb1{
+    left: calc(var(--w)*12.5 );
+}
+.b1{
+    left: calc(var(--w)*24.5 );
+}
+/* Clouds */
+.cl1{
+    left: calc(var(--w)*10 );
+    bottom: calc(var(--w)*10);
+}
+.cl2{
+    left: calc(var(--w)*20.2 );
+    bottom: calc(var(--w)*11);
+}
+.dcl1{
+    left: calc(var(--w)*37 );
+    bottom: calc(var(--w)*11);
+}
+.tcl1{
+    left: calc(var(--w)*28 );
+    bottom: calc(var(--w)*10);
+
+}
+/* Walls */
+.wall{
+    bottom: calc(var(--w)*5);
+}
+.wl1{
+    left: calc(var(--w)*21 );
+}
+.wl2{
+    left: calc(var(--w)*23 );
+}
+.wl3{
+    left: calc(var(--w)*25 );
+}
+/* GiftWalls */
+.giftwall{
+    bottom: calc(var(--w)*5);
+}
+.gwl1{
+    left: calc(var(--w)*17 );
+}
+.gwl2{
+    left: calc(var(--w)*22 );
+}
+.gwl3{
+    left: calc(var(--w)*24 );
+}
+.gwl4{
+    bottom:calc(var(--w)*9);
+    left: calc(var(--w)*23 );
+}
+/* Goombas */
+.goomba{
+    bottom: calc(var(--w)*2);
+}
+.gb1{
+    left: calc(var(--w)*23 + var(--w)/4);
+}
+/* GROUND */
+
+.hyperground{
+    bottom: var(--w);
+}
+.hp1{
+    left:0;
+}
+.hp2{
+    left:calc(var(--w)*4);
+}
+.hp3{
+    left:calc(var(--w)*8);
+}
+.hp4{
+    left:calc(var(--w)*12);
+}
+.hp5{
+    left:calc(var(--w)*16);
+}
+.hp6{
+    left:calc(var(--w)*20);
+}
+.hp7{
+    left:calc(var(--w)*24);
+}
+.hp8{
+    left:calc(var(--w)*28);
+}
+.hp9{
+    left:calc(var(--w)*32);
+}
+.hp10{
+    left:calc(var(--w)*36);
+}
+.hp11{
+    left:calc(var(--w)*40);
+}
+.hp12{
+    left:calc(var(--w)*44);
+}
+.hp13{
+    left:calc(var(--w)*48);
+}
+.hp14{
+    left:calc(var(--w)*52);
+}
+.hp15{
+    left:calc(var(--w)*56);
+}
+.hp16{
+    left:calc(var(--w)*60);
+}
+.hp17{
+    left:calc(var(--w)*64);
+}
+.hp18{
+    left:calc(var(--w)*68);
+}
+.hp19{
+    left:calc(var(--w)*72);
+}
+.hp20{
+    left:calc(var(--w)*76);
+}
+.hp21{
+    left:calc(var(--w)*80);
+}
+.hp22{
+    left:calc(var(--w)*84);
+}
+.hp23{
+    left:calc(var(--w)*88);
+}
+.hp24{
+    left:calc(var(--w)*92);
+}
+.hp25{
+    left:calc(var(--w)*96);
+}
+.hp26{
+    left:calc(var(--w)*100);
+}
+.hp27{
+    left:calc(var(--w)*104);
+}
+
+
+
