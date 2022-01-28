@@ -140,8 +140,10 @@
     calc(var(--px)*22) calc(var(--pxm)*5) 0 0 var(--blue);
     bottom:0;
     left:0;
-    width: 103%;
-    height: 103%;
+    /* width: 103%;
+    height: 103%; */
+width: 100%;
+    height: 100%;
     content: "";
     position: absolute;
     background-color: transparent;

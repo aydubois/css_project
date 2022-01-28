@@ -1,0 +1,76 @@
+.redmushroom:before{
+    --body: calc(var(--px)*9) calc(var(--px)) 0 0 var(--orange),
+            calc(var(--px)*10) calc(var(--pxm)*1) 0 0 var(--orange),
+            calc(var(--px)*10) calc(var(--pxm)*0) 0 0 var(--orange),
+            calc(var(--px)*6) 0 0 calc(var(--px)) var(--white),
+            calc(var(--px)*8) 0 0 calc(var(--px)) var(--white),
+            calc(var(--px)*9) 0 0 calc(var(--px)) var(--white),
+            calc(var(--px)*5) var(--pxm) 0 calc(var(--px)) var(--white),
+            calc(var(--px)*10) var(--pxm) 0 calc(var(--px)) var(--white),
+            calc(var(--px)*6) calc(var(--pxm)*2) 0 calc(var(--px)) var(--white),
+            calc(var(--px)*8) calc(var(--pxm)*2) 0 calc(var(--px)) var(--white),
+            calc(var(--px)*9) calc(var(--pxm)*2) 0 calc(var(--px)) var(--white);
+
+    --hat:  calc(var(--px)*3) calc(var(--pxm)*5) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*5) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*5) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*3) calc(var(--pxm)*7) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*7) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*4) calc(var(--pxm)*8) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*5) calc(var(--pxm)*9) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*6) calc(var(--pxm)*10) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*11) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*8) calc(var(--pxm)*13) 0 calc(var(--px))  var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*13) 0 calc(var(--px))  var(--orange),
+    calc(var(--px)*11) calc(var(--pxm)*8) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*10) calc(var(--pxm)*9) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*9) calc(var(--pxm)*10) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*8) calc(var(--pxm)*11) 0 calc(var(--px)*2)  var(--orange),
+    calc(var(--px)*1) calc(var(--pxm)*5) 0 calc(var(--px))  var(--orange),
+    calc(var(--px)*1) calc(var(--pxm)*6) 0 calc(var(--px))  var(--orange),
+    calc(var(--px)*14) calc(var(--pxm)*5) 0 calc(var(--px))  var(--orange),
+    calc(var(--px)*14) calc(var(--pxm)*6) 0 calc(var(--px))  var(--orange);
+
+    --spot: calc(var(--px)*4) calc(var(--pxm)*3) 0 0  var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*3) 0 0  var(--red),
+    calc(var(--px)*2) calc(var(--pxm)*3) 0 0  var(--red),
+    calc(var(--px)*11) calc(var(--pxm)*3) 0 0  var(--red),
+    calc(var(--px)*12) calc(var(--pxm)*3) 0 0  var(--red),
+    calc(var(--px)*13) calc(var(--pxm)*3) 0 0  var(--red),
+    calc(var(--px)*14) calc(var(--pxm)*5) 0 0  var(--red),
+    calc(var(--px)*14) calc(var(--pxm)*6) 0 0  var(--red),
+    calc(var(--px)*13) calc(var(--pxm)*5) 0 0  var(--red),
+    calc(var(--px)*13) calc(var(--pxm)*6) 0 0  var(--red),
+    calc(var(--px)*13) calc(var(--pxm)*7) 0 0  var(--red),
+    calc(var(--px)*12) calc(var(--pxm)*6) 0 0  var(--red),
+    calc(var(--px)*12) calc(var(--pxm)*7) 0 0  var(--red),
+    calc(var(--px)*12) calc(var(--pxm)*11) 0 0  var(--red),
+    calc(var(--px)*11) calc(var(--pxm)*10) 0 0  var(--red),
+    calc(var(--px)*11) calc(var(--pxm)*11) 0 0  var(--red),
+    calc(var(--px)*11) calc(var(--pxm)*12) 0 0  var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*10) 0 0  var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*11) 0 0  var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*12) 0 0  var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*13) 0 0  var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*10) 0 0  var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*11) 0 0  var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*12) 0 0  var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*13) 0 0  var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*12) 0 0  var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*11) 0 0  var(--red),
+    calc(var(--px)*4) calc(var(--pxm)*6) 0 var(--px)  var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*7) 0 var(--px)  var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*7) 0 var(--px)  var(--red),
+    calc(var(--px)*4) calc(var(--pxm)*8) 0 var(--px)  var(--red);
+
+    bottom:0;
+    left:0;
+    /* width: 103%;
+    height: 103%; */
+width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    box-shadow: var(--spot),var(--body), var(--hat);
+}

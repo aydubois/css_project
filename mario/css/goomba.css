@@ -47,8 +47,10 @@
             calc(var(--px)*6 )  calc(var(--pxm)*7 ) 0 var(--px) var(--beige-soft),     calc(var(--px)*7 ) calc(var(--pxm)*9 ) 0 0 var(--beige-soft);
     bottom:0;
     left:0;
-    width: 103%;
-    height: 103%;
+    /* width: 103%;
+    height: 103%; */
+width: 100%;
+    height: 100%;
     content: "";
     position: absolute;
     background-color: var(--black);
@@ -71,8 +73,10 @@
     calc(var(--px)*5) var(--px) 0 0 var(--black);
     bottom:0;
     left:0;
-    width: 103%;
-    height: 103%;
+    /* width: 103%;
+    height: 103%; */
+width: 100%;
+    height: 100%;
     content: "";
     position: absolute;
     background-color: var(--black);
