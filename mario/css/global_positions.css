@@ -364,11 +364,15 @@
 .giftwall, .emptywall{
     bottom: calc(var(--w)*5);
 }
-.emptywall{
+.emptywall, .coin{
     z-index: -1;
 }
 .gwl1, .ewl1{
     left: calc(var(--w)*17 );
+}
+.coin1{
+    left: calc(var(--w)*17.3 );
+    
 }
 .gwl2, .ewl2{
     left: calc(var(--w)*22 );

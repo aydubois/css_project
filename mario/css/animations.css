@@ -1,22 +1,164 @@
 /* @keyframes duration | timing-function | delay |
    iteration-count | direction | fill-mode | play-state | name */
 
-.mario{
-    animation: 5s linear .2s 1 normal forwards running firstjump;
-}
-.mario::before{
-    animation:.5s linear .2s 15 normal forwards running movement;
-}
 
+@keyframes upgiftbefore2{
+    
+    from{
+        z-index: -1;
+    }
+    95%  { 
+        z-index: -1;
+        opacity: 0;
+
+    }
+    96%  { 
+        z-index: 3;
+        opacity: 1;
+    }
+    to{
+        z-index: 3;
+        opacity: 1;
+
+    }
+}
+@keyframes upgiftbefore{
+    
+    from{
+        opacity: 1;
+    }
+    94%  { 
+        opacity: 1;
+    }
+    95%  { 
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes upgift{
+    85%  { 
+        bottom:calc(var(--w)*5);
+    }
+    90%  { 
+        bottom:calc(var(--w)*6);
+    } 
+    95%  { 
+        bottom:calc(var(--w)*5);
+    }
+}
+@keyframes upcoin{
+    to{
+        z-index: -1;
+    }
+    85%  { 
+        bottom:calc(var(--w)*5);
+        z-index: -1;
+
+    }
+    89%{
+        
+        z-index: 3;
+    }
+    90%  { 
+        bottom:calc(var(--w)*8);
+    } 
+    95%  { 
+        bottom:calc(var(--w)*6.5);
+        
+    }
+    96%{
+        opacity: hidden;
+    }
+}
 @keyframes firstjump{
     from { left: calc(var(--w)*1); }
-    75%  { left: calc(var(--w)*16);bottom:calc(var(--w)*2);} 
-    80%  { left: calc(var(--w)*16.5);bottom:calc(var(--w)*3);} 
-    85%  { left: calc(var(--w)*17);bottom:calc(var(--w)*4);} 
-    90%  { left: calc(var(--w)*17.5);bottom:calc(var(--w)*3);} 
-    to   { left: calc(var(--w)*18);bottom:calc(var(--w)*2); }
+    
+    75%  { 
+        left: calc(var(--w)*16);
+        bottom:calc(var(--w)*2);
+    } 
+    80%  { 
+        left: calc(var(--w)*16.5);
+        bottom:calc(var(--w)*3);
+    } 
+    85%  { 
+        left: calc(var(--w)*17);
+        bottom:calc(var(--w)*4);
+    } 
+    90%  { 
+        left: calc(var(--w)*17.5);
+        bottom:calc(var(--w)*3);
+    }
+    to   { 
+        left: calc(var(--w)*18);
+        bottom:calc(var(--w)*2); 
+    }
 }
+@keyframes secondjump{
+    from { left: calc(var(--w)*18); }
+    
+    45%  { 
+        left: calc(var(--w)*19);
+        bottom:calc(var(--w)*2);
+    } 
+    60%  { 
+        left: calc(var(--w)*19.5);
+        bottom:calc(var(--w)*3);
+    } 
+    75%  { 
+        left: calc(var(--w)*20);
+        bottom:calc(var(--w)*4);
+    } 
+    90%  { 
+        left: calc(var(--w)*20.5);
+        bottom:calc(var(--w)*3);
+    }
+    to   { 
+        left: calc(var(--w)*21);
+        bottom:calc(var(--w)*2); 
+    }
+}
+@keyframes thirdjump{
+    from { left: calc(var(--w)*21); }
+    
+    45%  { 
+        left: calc(var(--w)*22);
+        bottom:calc(var(--w)*2);
+    } 
+    60%  { 
+        left: calc(var(--w)*22);
+        bottom:calc(var(--w)*3);
+    } 
+    75%  { 
+        left: calc(var(--w)*22);
+        bottom:calc(var(--w)*4);
+    } 
+    90%  { 
+        left: calc(var(--w)*22);
+        bottom:calc(var(--w)*3);
+    }
+    to   { 
+        left: calc(var(--w)*22.5);
+        bottom:calc(var(--w)*2); 
+    }
+}
+@keyframes firstjumpbefore{
+    75%{
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top2),var(--hands2),var(--jumpsuit2),var(--foot2);
+    }
+    76%  { 
+        box-shadow: var(--hat-jump),var(--hair-jump),var(--head-jump),var(--top-jump),var(--hands-jump),var(--jumpsuit-jump),var(--foot-jump);
+    } 
+    97%{
+        box-shadow: var(--hat-jump),var(--hair-jump),var(--head-jump),var(--top-jump),var(--hands-jump),var(--jumpsuit-jump),var(--foot-jump);
 
+    }
+    98%{
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top2),var(--hands2),var(--jumpsuit2),var(--foot2);
+    }
+}
 @keyframes movement{
     0% {
         box-shadow: var(--hat),var(--hair),var(--head),var(--top),var(--hands),var(--jumpsuit),var(--foot);
@@ -38,4 +180,83 @@
     to {
         box-shadow: var(--hat),var(--hair),var(--head),var(--top2),var(--hands2),var(--jumpsuit2),var(--foot2);
     }
+}
+
+
+@keyframes goleft_goomba {
+    from{
+        left: calc(var(--w)*23 + var(--w)/4);
+    }
+    to{
+        left: calc(var(--w)*13 + var(--w)/4);
+
+    }
+}
+@keyframes movement_goomba {
+    from{
+        box-shadow: var(--left-foot),var(--right-foot);
+    }
+    50%{
+        box-shadow: var(--left-foot),var(--right-foot);
+    }
+    51%{
+        box-shadow: var(--left-foot2),var(--right-foot2);
+    }
+    to{
+        box-shadow: var(--left-foot2),var(--right-foot2);
+    }
+}
+@keyframes go {
+    
+    from{
+        left: 0;
+    }
+    10%{
+        left: calc(var(--wm)*10);
+    }
+    60%{
+        left: calc(var(--wm)*10);
+    }
+    to{
+        left : calc(var(--wm)*210);
+    }
+}
+main{
+    animation: 60s linear .5s 1 normal forwards running go;
+}
+.mario{
+    animation:  5s linear 0s 1 normal forwards running firstjump,
+                2s linear 5.1s 1 normal forwards running secondjump,
+                2s linear 7.1s 1 normal forwards running thirdjump
+                ;
+}
+.mario::before{
+    animation:  .5s linear 0s 10 normal forwards running movement, 
+                5s linear 0s 1 normal forwards running firstjumpbefore,
+                /* A revoir */
+                5s linear 2.2s 1 normal forwards running firstjumpbefore, 
+                5s linear 3.2s 1 normal forwards running firstjumpbefore
+                /*  */
+                ;
+}
+
+.coin1{
+    animation: 5s linear 0s 1 normal forwards running upcoin;
+}
+.gwl1{
+    animation: 5s linear 0s 1 normal forwards running upgift;
+}
+.gwl1:before{
+    animation: 5s linear 0s 1 normal forwards running upgiftbefore;
+
+}
+.ewl1{
+    animation: 5s linear 0s 1 normal forwards running upgiftbefore2;
+
+}
+.gb1{
+    animation:  10s linear 3s 1 normal forwards running goleft_goomba;
+}
+.gb1:after{
+    animation:  .5s linear 2s 40 normal forwards running movement_goomba;
 }

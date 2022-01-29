@@ -68,17 +68,35 @@ width: 100%;
                 calc(var(--pxm)*2) calc(var(--px)*1) 0 0 var(--black),
                 calc(var(--pxm)*3) calc(var(--pxm)*1) 0 0 var(--black),
                 calc(var(--pxm)*3) calc(var(--pxm)*0) 0 0 var(--black);
-    --right-foot:calc(var(--px)*7 + var(--px)*.5) calc(var(--pxm)*1 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
+    --right-foot:
+    calc(var(--px)*7 + var(--px)*.5) calc(var(--pxm)*1 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
     calc(var(--px)*6 + var(--px)*.5) calc(var(--pxm)*0 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
     calc(var(--px)*5) var(--px) 0 0 var(--black);
+
+
+    --left-foot2:
+    calc(var(--px)*7) 0 0 calc(var(--px)) var(--black),
+    calc(var(--px)*5) 0 0 0 var(--black),
+    calc(var(--px)*5) calc(var(--px)) 0 0 var(--black),
+    calc(var(--px)*8) calc(var(--pxm)*2) 0 0 var(--black),
+    calc(var(--px)*9) calc(var(--pxm)*2) 0 0 var(--black),
+    calc(var(--px)*9) calc(var(--pxm)*1) 0 0 var(--black),
+    calc(var(--px)*10) calc(var(--pxm)*1) 0 0 var(--black),
+    calc(var(--px)*10) calc(var(--pxm)*0) 0 0 var(--black),
+    calc(var(--px)*9) calc(var(--pxm)*0) 0 0 var(--black),
+    calc(var(--px)*9) calc(var(--px)) 0 0 var(--black);
+
+    --right-foot2:
+    calc(var(--pxm)*1 + var(--px)*.5) calc(var(--pxm)*1 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
+    calc(var(--px)*0 + var(--px)*.5) calc(var(--pxm)*0 + var(--px)*.5) 0 calc(var(--px)*0.5) var(--black),
+    calc(var(--px)*2) var(--px) 0 0 var(--black);
+
     bottom:0;
     left:0;
-    /* width: 103%;
-    height: 103%; */
-width: 100%;
+    width: 100%;
     height: 100%;
     content: "";
     position: absolute;
-    background-color: var(--black);
-    box-shadow: var(--left-foot),var(--right-foot);
+    background-color: transparent;
+    box-shadow: var(--left-foot2),var(--right-foot2);
 }

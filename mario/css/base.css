@@ -33,6 +33,12 @@ html,body{
     padding: 0px;
     overflow-x: hidden; 
 }
+body{
+    /* 1080 x 1920 px (verticale) */
+    width: 540px;
+    height: 960px;
+    margin: auto;
+}
 
 div{
     position:absolute;
