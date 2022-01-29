@@ -1,0 +1,41 @@
+/* @keyframes duration | timing-function | delay |
+   iteration-count | direction | fill-mode | play-state | name */
+
+.mario{
+    animation: 5s linear .2s 1 normal forwards running firstjump;
+}
+.mario::before{
+    animation:.5s linear .2s 15 normal forwards running movement;
+}
+
+@keyframes firstjump{
+    from { left: calc(var(--w)*1); }
+    75%  { left: calc(var(--w)*16);bottom:calc(var(--w)*2);} 
+    80%  { left: calc(var(--w)*16.5);bottom:calc(var(--w)*3);} 
+    85%  { left: calc(var(--w)*17);bottom:calc(var(--w)*4);} 
+    90%  { left: calc(var(--w)*17.5);bottom:calc(var(--w)*3);} 
+    to   { left: calc(var(--w)*18);bottom:calc(var(--w)*2); }
+}
+
+@keyframes movement{
+    0% {
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top),var(--hands),var(--jumpsuit),var(--foot);
+    }
+    33%{
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top),var(--hands),var(--jumpsuit),var(--foot);
+    }
+    34%{
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top3),var(--hands3),var(--jumpsuit3),var(--foot3);
+    }
+    66%{
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top3),var(--hands3),var(--jumpsuit3),var(--foot3);
+
+    }
+    67%{
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top2),var(--hands2),var(--jumpsuit2),var(--foot2);
+
+    }
+    to {
+        box-shadow: var(--hat),var(--hair),var(--head),var(--top2),var(--hands2),var(--jumpsuit2),var(--foot2);
+    }
+}

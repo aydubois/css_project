@@ -1,3 +1,9 @@
+.mario{
+    left: calc(var(--w)*4 );
+    bottom:calc(var(--w)*2);
+    z-index: 10;
+}
+
 .flag{
     left: calc(var(--w)*199.2 );
     bottom:calc(var(--w)*13);
@@ -410,7 +416,7 @@
     bottom:calc(var(--w)*9);
     left: calc(var(--w)*131 );
 }
-.gwl14, .ewl14{
+.gwl15, .ewl15{
     bottom:calc(var(--w)*5);
     left: calc(var(--w)*171 );
 }

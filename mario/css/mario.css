@@ -1,0 +1,224 @@
+.mario:before{
+    --foot: 
+    calc(var(--px)) calc(var(--px)*0) 0 0 var(--green-odd),
+    calc(var(--px)) calc(var(--pxm)) 0 0 var(--green-odd),
+    calc(var(--px)*3) calc(var(--pxm)) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*11) calc(var(--pxm)) 0 0 var(--green-odd),
+    calc(var(--px)*11) calc(var(--px)*0) 0 0 var(--green-odd),
+    calc(var(--px)*12) calc(var(--px)*0) 0 0 var(--green-odd);
+    
+    --jumpsuit:
+    calc(var(--px)*3) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*4) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*4) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*4) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*5) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*7) calc(var(--pxm)*5) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*7) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*7) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*8) 0 0 var(--red);
+    
+    --hands:
+    calc(var(--px)*1) calc(var(--pxm)*4) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*3) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*5) calc(var(--pxm)*5) 0 0 var(--orange),
+    calc(var(--px)*8) calc(var(--pxm)*5) 0 0 var(--orange),
+    calc(var(--px)*11) calc(var(--pxm)*5) 0 0 var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*5) 0 0 var(--orange),
+    calc(var(--px)*10) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*11) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*3) 0 0 var(--orange),
+    calc(var(--px)*11) calc(var(--pxm)*3) 0 0 var(--orange);
+
+    --top:
+    calc(var(--px)*3) calc(var(--pxm)*7) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*3) calc(var(--pxm)*5) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*0) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*6) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*7) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*6) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*7) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*11) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*11) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*12) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*5) 0 0 var(--green-odd);
+
+    --head:
+    calc(var(--px)*4) calc(var(--pxm)*10) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*4) calc(var(--pxm)*12) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*10) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*12) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*8) calc(var(--pxm)*12) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*10) calc(var(--pxm)*11) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*9) calc(var(--pxm)*10) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*11) 0 0 var(--orange);
+
+    --hair:
+    calc(var(--px)*11) calc(var(--pxm)*10) 0 0 var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*10) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*10) 0 0 var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*10) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*11) 0 0 var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*12) 0 0 var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*13) 0 0 var(--green-odd),
+    calc(var(--px)*5) calc(var(--pxm)*11) 0 0 var(--green-odd),
+    calc(var(--px)*5) calc(var(--pxm)*13) 0 0 var(--green-odd),
+    calc(var(--px)*4) calc(var(--pxm)*13) 0 0 var(--green-odd),
+    calc(var(--px)*4) calc(var(--pxm)*12) 0 0 var(--green-odd),
+    calc(var(--px)*4) calc(var(--pxm)*11) 0 0 var(--green-odd),
+    calc(var(--px)*3) calc(var(--pxm)*13) 0 0 var(--green-odd),
+    calc(var(--px)*3) calc(var(--pxm)*10) 0 0 var(--green-odd),
+    calc(var(--px)*2) calc(var(--pxm)*13) 0 0 var(--green-odd),
+    calc(var(--px)*2) calc(var(--pxm)*12) 0 0 var(--green-odd),
+    calc(var(--px)*2) calc(var(--pxm)*11) 0 0 var(--green-odd),
+    calc(var(--px)*2) calc(var(--pxm)*10) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*12) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*11) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*10) 0 0 var(--green-odd);
+
+    --hat:
+    calc(var(--px)*2) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*4) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*7) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*11) calc(var(--pxm)*14) 0 0 var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*15) 0 0 var(--red),
+    calc(var(--px)*4) calc(var(--pxm)*15) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*15) 0 0 var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*15) 0 0 var(--red),
+    calc(var(--px)*7) calc(var(--pxm)*15) 0 0 var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*15) 0 0 var(--red);
+
+
+
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100%; 
+    content: "";
+    position: absolute;
+    background-color: var(--green-odd);
+    box-shadow: var(--hat),var(--hair),var(--head),var(--top),var(--hands),var(--jumpsuit),var(--foot);
+    /* box-shadow: var(--hat),var(--hair),var(--head),var(--top2),var(--hands2),var(--jumpsuit2),var(--foot2); */
+    /* box-shadow: var(--hat),var(--hair),var(--head),var(--top3),var(--hands3),var(--jumpsuit3),var(--foot3); */
+
+    --foot2: 
+    calc(var(--pxm)*1) calc(var(--pxm)*2) 0 0 var(--green-odd),
+    calc(var(--pxm)*1) calc(var(--pxm)*1) 0 0 var(--green-odd),
+    calc(var(--px)*3) calc(var(--pxm)*0) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*11) calc(var(--pxm)*3) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*11) calc(var(--pxm)*5) 0 0 var(--green-odd),
+    calc(var(--px)*12) calc(var(--pxm)*5) 0 0 var(--green-odd);
+    
+    --jumpsuit2:
+    calc(var(--px)*3) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*5) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*4) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*4) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*5) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*7) calc(var(--pxm)*5) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*3) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*7) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*7) 0 0 var(--red),
+    calc(var(--px)*1) calc(var(--pxm)*4) 0 0 var(--red),
+    calc(var(--px)*0) calc(var(--pxm)*3) 0 0 var(--red),
+    calc(var(--px)*1) calc(var(--pxm)*3) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*8) 0 0 var(--red);
+    
+    --hands2:
+    calc(var(--pxm)*1) calc(var(--pxm)*6) 0 calc(var(--px)) var(--orange),
+    calc(var(--px)*1) calc(var(--pxm)*6) 0 0 var(--orange),
+    calc(var(--px)*3) calc(var(--pxm)*7) 0 0 var(--orange),
+    calc(var(--px)*6) calc(var(--pxm)*7) 0 0 var(--orange),
+    calc(var(--px)*11) calc(var(--pxm)*7) 0 0 var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*7) 0 0 var(--orange),
+    calc(var(--px)*13) calc(var(--pxm)*7) 0 0 var(--orange),
+    calc(var(--px)*12) calc(var(--pxm)*6) 0 0 var(--orange),
+    calc(var(--px)*13) calc(var(--pxm)*6) 0 0 var(--orange);
+
+    --top2:
+    calc(var(--px)*3) calc(var(--pxm)*7) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*0) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*1) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*6) calc(var(--pxm)*8) 0 0 var(--red),
+    calc(var(--px)*7) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*6) 0 0 var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*7) 0 0 var(--red),
+    calc(var(--px)*7) calc(var(--pxm)*7) 0 0 var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*11) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*6) 0 0 var(--green-odd),
+    calc(var(--px)*6) calc(var(--pxm)*6) 0 0 var(--orange);
+
+
+    --foot3: 
+    calc(var(--px)*4) calc(var(--pxm)) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*6) calc(var(--pxm)) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*2) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*10) calc(var(--pxm)*1) 0 0 var(--green-odd);
+    
+    --jumpsuit3:
+    
+    calc(var(--px)*8) calc(var(--pxm)*4) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*6) 0 calc(var(--px)) var(--red),
+    calc(var(--px)*6) calc(var(--pxm)*2) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*2) 0 0 var(--red),
+    calc(var(--px)*4) calc(var(--pxm)*2) 0 0 var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*2) 0 0 var(--red),
+    calc(var(--px)*3) calc(var(--pxm)*3) 0 0 var(--red),
+    calc(var(--px)*2) calc(var(--pxm)*3) 0 0 var(--red),
+    calc(var(--px)*2) calc(var(--pxm)*4) 0 0 var(--red),
+    calc(var(--px)*1) calc(var(--pxm)*4) 0 0 var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*4) 0 0 var(--red),
+    calc(var(--px)*10) calc(var(--pxm)*5) 0 0 var(--red),
+    calc(var(--px)*9) calc(var(--pxm)*6) 0 0 var(--red),
+    calc(var(--px)*8) calc(var(--pxm)*6) 0 0 var(--red),
+    calc(var(--px)*5) calc(var(--pxm)*8) 0 0 var(--red)
+    ;
+    
+    --hands3:
+    calc(var(--px)*5) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*6) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*4) 0 0 var(--orange),
+    calc(var(--px)*5) calc(var(--pxm)*3) 0 0 var(--orange),
+    calc(var(--px)*6) calc(var(--pxm)*3) 0 0 var(--orange),
+    calc(var(--px)*7) calc(var(--pxm)*6) 0 0 var(--orange),
+    calc(var(--px)*10) calc(var(--pxm)*6) 0 0 var(--orange);
+
+    --top3:
+    calc(var(--px)*3) calc(var(--pxm)*7) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*2) calc(var(--pxm)*6) 0 calc(var(--px)) var(--green-odd),
+    calc(var(--px)*6) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*7) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*8) 0 0 var(--green-odd),
+    calc(var(--px)*8) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*9) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*5) calc(var(--pxm)*7) 0 0 var(--green-odd),
+    calc(var(--px)*5) calc(var(--pxm)*5) 0 0 var(--green-odd),
+    calc(var(--px)*4) calc(var(--pxm)*5) 0 0 var(--green-odd),
+    calc(var(--px)*4) calc(var(--pxm)*4) 0 0 var(--green-odd),
+    calc(var(--px)*3) calc(var(--pxm)*4) 0 0 var(--green-odd),
+    calc(var(--px)*4) calc(var(--pxm)*3) 0 0 var(--green-odd);
+
+}
