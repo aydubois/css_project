@@ -369,26 +369,6 @@
             </section>
         </main>
     </article>
-    <script>
-        document.querySelector('#left').addEventListener('focus',()=>{
-            console.log("focus left")
-            console.log(document.querySelector('main').getAnimations()[0].effect.getComputedTiming().progress)
-            let x = document.querySelector('main').getBoundingClientRect().x
-            let duration = Math.floor(-x*60/3000)
-            console.log('x '+ x)
-            console.log('duration '+ duration)
-            let progress = 100 - (duration*100/60)/100
-            document.querySelector('main').getAnimations()[0].effect.getComputedTiming().progress = progress
-            console.log(progress)
-            console.log(document.querySelector('main').getAnimations()[0].effect.getComputedTiming().progress)
-            // let animation =[ [{
-            // transform: `translateX(${x}px)`},
-            // {transform: 'translateX(0)'}], {duration:duration+'s'}]
-            // console.log(animation)
-            // document.querySelector('main').animate([{
-            // transform: `translateX(${x}px)`},
-            // {transform: 'translateX(0)'}], {duration:duration*1000})
-        })
-    </script>
+    
 </body>
 </html>
