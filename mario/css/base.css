@@ -26,17 +26,17 @@
 *{
     box-sizing: content-box;
 }
-html,body{
+html,.body{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
-body{
+.body{
     /* 1080 x 1920 px (verticale) */
-    width: 540px;
-    height: 960px;
+    /* width: 540px;
+    height: 960px; */
     margin: auto;
 }
 
@@ -57,15 +57,19 @@ section{
 }
 main{
     position: absolute;
+    top: 100px;
+    left: 0;
     /* left: calc(var(--wm)*160); */
     /* left: calc(var(--wm)*198);
     bottom: calc(var(--wm)*8); */
 }
-body{
+.body{
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: #000;
+    height: 80vh;
 }
 .pixel{
     position: absolute;
@@ -75,4 +79,10 @@ body{
     height: var(--px);
     background-color: blue;
     z-index: 2;
+}
+.controls{
+    height: 20vh;
+}
+.controls label {
+    font-size: 16rem;
 }
