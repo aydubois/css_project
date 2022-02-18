@@ -1,5 +1,5 @@
 .mario{
-    left: calc(var(--w)*4 );
+    left: calc(var(--w)*26 );
     bottom:calc(var(--w)*2);
     z-index: 10;
 }

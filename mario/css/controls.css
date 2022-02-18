@@ -29,12 +29,11 @@
     }
     to{
         transform: translateX(-3000px);
-        
     }
 }
 @keyframes goReverse {
     from{
-        transform: translateX(-3000px);
+        
         
     }
     to{
@@ -71,51 +70,13 @@
     }
 }
 
-#right:focus  ~ .body main{
-    animation: 60s linear 0s 1 normal forwards running go;
-}
 
-#right:not(:focus) ~ .body main{
-    animation: 60s linear 0s 1 normal forwards paused go;
-}
-#right:focus   ~ .body  .mario {
-    animation: 60s linear 0s 1 normal forwards running goMario;
-}
-#right:not(:focus)   ~ .body  .mario {
-    animation: 60s linear 0s 1 normal forwards paused goMario;
-}
-#right:focus  ~ .body  .mario::before {
+main:focus-within .mario::before{
     animation: .5s linear 0s infinite normal forwards running movement;
 }
-#right:not(:focus)  ~ .body  .mario::before {
+main:not(:focus) .mario::before{
     animation: .5s linear 0s infinite normal forwards paused movement;
 }
-#left:focus ~ .body main{
-    animation: 60s linear 0s 1 reverse forwards paused go;
+aside:hover + .body .mario::before{
+    animation: 1s linear 0s infinite normal forwards running jump;
 }
-
-/* #left:not(:focus) ~ .body main{
-    animation: 60s linear 0s 1 reverse forwards paused go;
-} */
-/* #left:focus   ~ .body  .mario {
-    animation: 60s linear 0s 1 reverse forwards running goMario;
-} */
-/* #left:not(:focus)   ~ .body  .mario {
-    animation: 60s linear 0s 1 reverse forwards paused goMario;
-} */
-/* #left:focus  ~ .body  .mario::before {
-    animation: .5s linear 0s infinite reverse forwards running movement;
-} */
-/* #left:not(:focus)  ~ .body  .mario::before {
-    animation: .5s linear 0s infinite reverse forwards paused movement;
-} */
-
-#up:focus ~ .body .mario::before{
-    animation: 1s linear 0s infinite normal forwards running jump, 1s linear 0s infinite normal forwards paused movement;
-}
-
-#up:not(:focus) ~ .body .mario::before{
-    animation: 1s linear 0s 1 normal forwards running intowall, 1s linear 0s infinite normal forwards paused movement;
-}
-
-
