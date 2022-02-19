@@ -361,7 +361,7 @@
     left: calc(var(--w)*172 );
 }
 /* GiftWalls  / Emptywall*/
-.giftwall, .emptywall{
+.giftwall, .emptywall, .coin{
     bottom: calc(var(--w)*5);
 }
 .emptywall, .coin{
@@ -372,7 +372,6 @@
 }
 .coin1{
     left: calc(var(--w)*17.3 );
-    
 }
 .gwl2, .ewl2{
     left: calc(var(--w)*22 );
