@@ -18,11 +18,15 @@
     --wm:calc(-1*var(--w));
     --px:calc(var(--w) /16);
     --pxm:calc(-1*var(--px));
-    
+    --height-max:calc(var(--w)*15);
+    --width-max:calc(var(--w)*215);
+
 }
+
 *{
     box-sizing: content-box;
 }
+
 html,.body{
     width: 100%;
     height: 100%;
@@ -30,55 +34,42 @@ html,.body{
     padding: 0px;
     overflow-x: hidden; 
 }
-.body{
-    height: calc(var(--w)*15);
-    /* margin: auto; */
-}
 
-div{
+div{ /* one pixel */
     position:absolute;
     width:var(--px);
     height:var(--px);
 }
 section{
-    height: calc(var(--w)*15);
-    width: calc(var(--w)*215);
+    height: var(--height-max);
+    width: var(--width-max);
     position: relative;
     border:1px solid black;
     background-color: var(--blue-dark);
     overflow: hidden; 
+    flex: 1 0 var(--width-max);
+}
 
-}
-main{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 .body{
+    height: var(--height-max);
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #000;
-    /* height: 80vh; */
-}
-.pixel{
-    position: absolute;
-    top: calc(var(--px)*28);
-    left: calc(var(--px)*71);
-    width: var(--px);
-    height: var(--px);
-    background-color: blue;
-    z-index: 2;
-}
-.controls{
-    height: 20vh;
-}
-.controls label {
-    font-size: 16rem;
+    background-color: var(--black);
+    overflow: hidden;
 }
 
-body main{
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 98vh;
+    background-color: black;
+}
+
+main{
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow-x: scroll;
@@ -87,86 +78,17 @@ body main{
     scroll-behavior: smooth;
     scrollbar-width: none;
     display: flex;
+    overflow: -moz-scrollbars-none; /* firefox */
 }
+
 main::-webkit-scrollbar {  /* chrome */
     width: 0 !important 
 }
-main{ /* firefox */
-    overflow: -moz-scrollbars-none; 
-}
-.body{ /* granpa */
-    overflow: hidden;
-    transform: rotate(0deg); /* permet de hack la position dad / son */
-}
-main section{ /* dad */
-    overflow-y: hidden;
-    scroll-snap-align: start;
-    scroll-margin-block-start: -30vw;
-    scroll-margin-block-end: 30vw;
-    margin: 0 30vw;
-
-    flex: 1 0 calc(var(--w)*215);
-}
-.mario{ /* son */
-    position: fixed;
-}
-
-
-aside.blah{
-    width: 100%;
-    background-color: #00a800;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-}
-body{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    height: 98vh;
-    background-color: black;
-}
-/* input{
-    display: absolute;
-    margin: auto;
-} */
-
-.start{
-    display: block;
-    z-index: 50;
-    position: absolute;
-    top: 50px;
-    font-size: 20px;
-    /* width: 100vw;
-    height: 100vh; */
-}
-body:focus-within p{
-    display: none;
-}
-
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
-  .nifaitniafaire{
-    position: fixed;
-    width: 40vw;
-    height: 100vw;
-    top: 0;
-    left: -1vw;
-    border-left: 32vw solid black;
-    border-right: 30vw solid black;
-    z-index: 60;
-}
-
 
 
 /********************************/
   /* Css by Benoist */
+
 input {
     display: none;
 }
@@ -185,8 +107,8 @@ label {
     margin: 2rem;
     display: inline-block;
     padding: 1rem 4rem;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 50px;
 }
 

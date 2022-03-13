@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/giftwall.css">
     <link rel="stylesheet" href="./css/ground.css">
     <link rel="stylesheet" href="./css/mountain.css">
-    <!-- <link rel="stylesheet" href="./css/monster1.css"> -->
     <link rel="stylesheet" href="./css/goomba.css">
     <link rel="stylesheet" href="./css/cloud.css">
     <link rel="stylesheet" href="./css/coin.css">
@@ -39,13 +38,11 @@
 </head>
 
 <body>
-    <aside class="blah">Survole la zone verte avec la souris pour sauter</aside>
     
     <article class="body">
         <main tabindex="1" accesskey="z" >
-            <div class="nifaitniafaire"></div>
             <input type="checkbox" id="start">
-            <label for="start">Use <- and -> to move <br> <span class="btn">Start</span></label>
+            <label for="start">Use <- and -> to move the camera <br> <span class="btn">Start</span></label>
             <section>
 
                 <div class="bigmountain bgmnt1"></div>
@@ -370,17 +367,5 @@
 
         </main>
     </article>
-    <script>
-        let c = document.querySelectorAll('.c:not([data-c="finish"])')
-        document.querySelector('main').addEventListener('scroll',(e)=>{
-            c.forEach(el=>{
-                let x=el.getBoundingClientRect().x;
-                x<864&&x>832 && el.getAttribute('data-c') !== "finish" ? el.setAttribute('data-c', true): ''
-        }) })
-        c.forEach(el=>{ "transitioncancel transitionend".split(" ").forEach(function(e){
-            if(el.getAttribute('data-c') !== "finish")
-            el.addEventListener(e, ()=>{el.setAttribute('data-c','finish')})
-        }) })
-    </script>
 </body>
 </html>
