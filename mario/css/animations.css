@@ -223,26 +223,26 @@
         left : calc(var(--wm)*210);
     }
 }
-main{
+/* main{
     animation: 60s linear .5s 1 normal forwards running go;
-}
-.mario{
+} */
+
+/* body:focus-within .mario{
     animation:  5s linear 0s 1 normal forwards running firstjump,
                 2s linear 5.1s 1 normal forwards running secondjump,
                 2s linear 7.1s 1 normal forwards running thirdjump
                 ;
 }
-.mario::before{
+
+body:focus-within .mario::before{
     animation:  .5s linear 0s 10 normal forwards running movement, 
                 5s linear 0s 1 normal forwards running firstjumpbefore,
-                /* A revoir */
                 5s linear 2.2s 1 normal forwards running firstjumpbefore, 
                 5s linear 3.2s 1 normal forwards running firstjumpbefore
-                /*  */
                 ;
-}
+} */
 
-.coin1{
+/* .coin1{
     animation: 5s linear 0s 1 normal forwards running upcoin;
 }
 .gwl1{
@@ -261,4 +261,44 @@ main{
 }
 .gb1:after{
     animation:  .5s linear 2s 40 normal forwards running movement_goomba;
+} */
+
+
+
+/* body:focus-within .mario::before{
+    animation:  .5s linear 0s 10 normal forwards running movement, 
+                5s linear 0s 1 normal forwards running firstjumpbefore,
+                5s linear 2.2s 1 normal forwards running firstjumpbefore, 
+                5s linear 3.2s 1 normal forwards running firstjumpbefore
+                ;
+}  */
+
+@keyframes run1{
+    from { left: calc(var(--w)*7) }
+    to { left: calc(var(--w)*16) }
+}
+@keyframes goomba1{
+    from { left: calc(var(--w)*23.25); }
+    to { left: calc(var(--wm)*3) }
+}
+body:focus-within .gb1{
+    animation:  20s linear 0s 1 normal forwards running goomba1;
+}
+@keyframes goomba2{
+    from { left: calc(var(--w)*41) }
+    to { left: calc(var(--w)*46.5) }
+}
+body:focus-within .gb2{
+    animation:  4s linear 0s infinite alternate forwards running goomba2;
+}
+@keyframes goomba3{
+    from { left: calc(var(--w)*53.75) }
+    to { left: calc(var(--w)*16) }
+}
+@keyframes goomba4{
+    from { left: calc(var(--w)*55.25) }
+    to { left: calc(var(--w)*16) }
+}
+body:focus-within .mario{
+    animation:  3s linear 0s 1 normal forwards running run1;
 }
