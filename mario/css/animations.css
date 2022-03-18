@@ -4,76 +4,8 @@
 
 /* Feuille de style pas utilisé pour le moment */
 
-@keyframes upgiftbefore2{
-    
-    from{
-        z-index: -1;
-    }
-    95%  { 
-        z-index: -1;
-        opacity: 0;
 
-    }
-    96%  { 
-        z-index: 3;
-        opacity: 1;
-    }
-    to{
-        z-index: 3;
-        opacity: 1;
-
-    }
-}
-@keyframes upgiftbefore{
-    
-    from{
-        opacity: 1;
-    }
-    94%  { 
-        opacity: 1;
-    }
-    95%  { 
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
-@keyframes upgift{
-    85%  { 
-        bottom:calc(var(--w)*5);
-    }
-    90%  { 
-        bottom:calc(var(--w)*6);
-    } 
-    95%  { 
-        bottom:calc(var(--w)*5);
-    }
-}
-@keyframes upcoin{
-    to{
-        z-index: -1;
-    }
-    85%  { 
-        bottom:calc(var(--w)*5);
-        z-index: -1;
-
-    }
-    89%{
-        
-        z-index: 3;
-    }
-    90%  { 
-        bottom:calc(var(--w)*8);
-    } 
-    95%  { 
-        bottom:calc(var(--w)*6.5);
-        
-    }
-    96%{
-        opacity: hidden;
-    }
-}
+/* 
 @keyframes firstjump{
     from { left: calc(var(--w)*1); }
     
@@ -222,7 +154,7 @@
     to{
         left : calc(var(--wm)*210);
     }
-}
+} */
 /* main{
     animation: 60s linear .5s 1 normal forwards running go;
 } */
@@ -242,63 +174,280 @@ body:focus-within .mario::before{
                 ;
 } */
 
-/* .coin1{
-    animation: 5s linear 0s 1 normal forwards running upcoin;
-}
-.gwl1{
-    animation: 5s linear 0s 1 normal forwards running upgift;
-}
-.gwl1:before{
-    animation: 5s linear 0s 1 normal forwards running upgiftbefore;
-
-}
-.ewl1{
-    animation: 5s linear 0s 1 normal forwards running upgiftbefore2;
-
-}
-.gb1{
-    animation:  10s linear 3s 1 normal forwards running goleft_goomba;
-}
-.gb1:after{
-    animation:  .5s linear 2s 40 normal forwards running movement_goomba;
-} */
 
 
-
-/* body:focus-within .mario::before{
-    animation:  .5s linear 0s 10 normal forwards running movement, 
-                5s linear 0s 1 normal forwards running firstjumpbefore,
-                5s linear 2.2s 1 normal forwards running firstjumpbefore, 
-                5s linear 3.2s 1 normal forwards running firstjumpbefore
-                ;
-}  */
-
-@keyframes run1{
-    from { left: calc(var(--w)*7) }
-    to { left: calc(var(--w)*16) }
+/*** GIFTWALLS ***/
+@keyframes upgiftbefore2{
+    from{
+        z-index: -1;
+        opacity: 0;
+    }
+    70%  { 
+        z-index: -1;
+        opacity: 0;
+    }
+    to{
+        z-index: 3;
+        opacity: 1;
+    }
 }
+@keyframes upgiftbefore{
+    
+    from { opacity: 1;}
+    50%  { opacity: 1;}
+    to{ opacity: 0;}
+}
+@keyframes upgift{
+    40%  { bottom:calc(var(--w)*5);}
+    70%  { bottom:calc(var(--w)*6);} 
+    100%  { bottom:calc(var(--w)*5);}
+}
+@keyframes upcoin{
+    to{ z-index: -1;}
+    50%  { 
+        bottom:calc(var(--w)*5);
+        z-index: -1;
+    }
+    60%{ z-index: 3;}
+    70%  { bottom:calc(var(--w)*8);} 
+    90%  { bottom:calc(var(--w)*6.5);}
+    100%{ opacity: hidden;}
+}
+body:focus-within .coin1{
+    animation: 1s linear 3.6s 1 normal forwards running upcoin;
+}
+body:focus-within .gwl1{
+    animation: 1s linear 3.6s 1 normal forwards running upgift;
+}
+body:focus-within .gwl1:before{
+    animation: 1s linear 3.6s 1 normal forwards running upgiftbefore;
+
+} 
+body:focus-within .ewl1{
+    animation: 1s linear 3.6s 1 normal forwards running upgiftbefore2;
+
+}
+/*** GOOMBAS ***/
 @keyframes goomba1{
     from { left: calc(var(--w)*23.25); }
-    to { left: calc(var(--wm)*3) }
+    80% {
+        display: block;
+    }
+    to { 
+        display: none;
+        left: calc(var(--wm)*3)
+    }
 }
 body:focus-within .gb1{
     animation:  20s linear 0s 1 normal forwards running goomba1;
 }
 @keyframes goomba2{
-    from { left: calc(var(--w)*41) }
-    to { left: calc(var(--w)*46.5) }
+    from {left: calc(var(--w)*41 + var(--w)/2);}
+    5% { left: calc(var(--w)*41); }
+    50% { left: calc(var(--w)*46.5); }
+    to { left: calc(var(--w)*41 + var(--w)/2); }
+
 }
 body:focus-within .gb2{
-    animation:  4s linear 0s infinite alternate forwards running goomba2;
+    animation:  4s linear 15s 10 normal forwards running goomba2;
 }
 @keyframes goomba3{
-    from { left: calc(var(--w)*53.75) }
-    to { left: calc(var(--w)*16) }
+    from { left: calc(var(--w)*53.75); }
+    25% { left: calc(var(--w)*49); }
+    75% { left: calc(var(--w)*57.5); }
+    to { left: calc(var(--w)*53.75); }
+
+}
+body:focus-within .gb3{
+    animation:  7s linear 0s infinite normal forwards running goomba3;
 }
 @keyframes goomba4{
-    from { left: calc(var(--w)*55.25) }
-    to { left: calc(var(--w)*16) }
+    from { left: calc(var(--w)*55.25); }
+    33% {left: calc(var(--w)*49);}
+    84% { left: calc(var(--w)*57.5); }
+    to { left: calc(var(--w)*55.25); }
+}
+body:focus-within .gb4{
+    animation:  7s linear 0s infinite normal forwards running goomba4;
+}
+
+/*** MARIO ***/
+/*
+* 3cases/s
+*/
+@keyframes run1{
+    from { left: calc(var(--w)*7); }
+    to { left: calc(var(--w)*16); }
+}
+@keyframes jump1{
+    from { 
+        bottom: calc(var(--w)*2);
+        left: calc(var(--w)*16); 
+    }
+    50%{
+        bottom: calc(var(--w)*4);
+    }
+    to { 
+        left: calc(var(--w)*18); 
+        bottom: calc(var(--w)*2);
+    }
+}
+@keyframes run2{
+    from { left: calc(var(--w)*18); }
+    to { left: calc(var(--w)*23); }
+}
+@keyframes jump2{
+    from { 
+        bottom: calc(var(--w)*2);
+        left: calc(var(--w)*23); 
+    }
+    50%{
+        bottom: calc(var(--w)*4);
+    }
+    to { 
+        left: calc(var(--w)*25); 
+        bottom: calc(var(--w)*2);
+    }
+}
+@keyframes run3{
+    from { left: calc(var(--w)*25); }
+    to { left: calc(var(--w)*27); }
+}
+@keyframes jump3{
+    from { 
+        bottom: calc(var(--w)*2);
+        left: calc(var(--w)*27); 
+    }
+    50%{
+        bottom: calc(var(--w)*5);
+    }
+    66%{
+        bottom: calc(var(--w)*4);
+    }
+    to { 
+        left: calc(var(--w)*29); 
+        bottom: calc(var(--w)*4);
+    }
+}
+@keyframes jump4{
+    from { 
+        bottom: calc(var(--w)*4);
+        left: calc(var(--w)*29); 
+    }
+    8%{
+        left: calc(var(--w)*28.4); 
+        bottom: calc(var(--w)*4);
+    }
+    50%{
+        bottom: calc(var(--w)*7.5);
+    }
+    60%{
+        bottom: calc(var(--w)*7);
+    }
+    to { 
+        left: calc(var(--w)*24); 
+        bottom: calc(var(--w)*6);
+    }
+}
+@keyframes jump5{
+    from { 
+        bottom: calc(var(--w)*6);
+        left: calc(var(--w)*24); 
+    }
+
+    50%{
+        bottom: calc(var(--w)*8);
+    }
+
+    to { 
+        left: calc(var(--w)*23); 
+        bottom: calc(var(--w)*6);
+    }
+}
+@keyframes jump6{
+    from { 
+        bottom: calc(var(--w)*6);
+        left: calc(var(--w)*23); 
+    }
+
+    50%{
+        bottom: calc(var(--w)*8);
+    }
+
+    to { 
+        left: calc(var(--w)*23); 
+        bottom: calc(var(--w)*6);
+    }
+}
+@keyframes run4{
+    from { 
+        left: calc(var(--w)*29); 
+        bottom: calc(var(--w)*4);
+    }
+    30%{
+        bottom: calc(var(--w)*4);
+    }
+    40%{
+        bottom: calc(var(--w)*3);
+    }
+    50%{
+        bottom: calc(var(--w)*2);
+
+    }
+    to { 
+        left: calc(var(--w)*37); 
+        bottom: calc(var(--w)*2);
+    }
+}
+@keyframes jump7{
+    from { 
+        bottom: calc(var(--w)*2);
+        left: calc(var(--w)*37); 
+    }
+
+    50%{
+        bottom: calc(var(--w)*6);
+    }
+
+    to { 
+        left: calc(var(--w)*39); 
+        bottom: calc(var(--w)*5);
+    }
+}
+@keyframes jump8{
+    from { 
+        bottom: calc(var(--w)*5);
+        left: calc(var(--w)*39); 
+    }
+    20%{
+        left: calc(var(--w)*40); 
+        bottom: calc(var(--w)*5);
+    }
+    50%{
+        bottom: calc(var(--w)*8);
+    }
+    to { 
+        left: calc(var(--w)*47.5); 
+        bottom: calc(var(--w)*6);
+    }
 }
 body:focus-within .mario{
-    animation:  3s linear 0s 1 normal forwards running run1;
+    animation:  
+    3s linear 0s 1 normal forwards running run1,
+                2s linear 3s 1 normal forwards running jump1,
+                1.7s linear 5s 1 normal forwards running run2,
+                2s linear 6.7s 1 normal forwards running jump2,
+                .7s linear 8.7s 1 normal forwards running run3,
+                1.7s linear 9.4s 1 normal forwards running jump3,
+                2s linear 11.1s 1 normal forwards running jump4,
+                1.7s linear 13.1s 1 normal forwards running jump5,
+                1s linear 14.8s 2 normal forwards running jump6,
+                1s linear 15.8s 1 reverse forwards running jump5,
+                2s linear 16.8s 1 reverse forwards running jump4,
+                2.7s linear 18.8s 1 normal forwards running run4,
+                1.7s linear 21.5s 1 normal forwards running jump7,
+                1.7s linear 23.2s 1 normal forwards running jump8
+
+
+                ;
 }
