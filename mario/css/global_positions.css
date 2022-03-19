@@ -1,6 +1,7 @@
 .mario{
-    left: calc(var(--w)*7 );
-    bottom:calc(var(--w)*2);
+    left:0;
+    bottom:0;
+    transform: translate(calc(var(--w)*7 ),calc(var(--wm)*2));
     z-index: 10;
 }
 
@@ -368,10 +369,20 @@
     z-index: -1;
 }
 .gwl1, .ewl1{
-    left: calc(var(--w)*17 );
+    left:0;
+    bottom: 0;
+    transform: translate(calc(var(--w)*17),calc(var(--wm)*5));
+    /* left: calc(var(--w)*17 ); */
 }
 .coin1{
-    left: calc(var(--w)*17.3 );
+    left:0;
+    bottom: 0;
+    transform: translate(calc(var(--w)*17.3),calc(var(--wm)*5));
+    /* left: calc(var(--w)*17.3 ); */
+}
+.coin2,.coin3,.coin4{
+    bottom:calc(var(--w)*9);
+    left: calc(var(--w)*23.3 );
 }
 .gwl2, .ewl2{
     left: calc(var(--w)*22 );
@@ -440,20 +451,24 @@
 
 /* Goombas */
 .goomba{
-    bottom: calc(var(--w)*2);
+    /* bottom: calc(var(--w)*2); */
+    left: 0;
+    bottom: 0;
 }
 .gb1{
-    left: calc(var(--w)*23 + var(--w)/4);
+    transform: translate(calc(var(--w)*21.25), calc(var(--wm)*2));
 }
 .gb2{
-    left: calc(var(--w)*41 + var(--w)/2);
+    transform: translate(calc(var(--w)*41.5), calc(var(--wm)*2));
 }
 .gb3{
-    left: calc(var(--w)*53.5 + var(--w)/4);
+    transform: translate(calc(var(--w)*53.75), calc(var(--wm)*2));
 }
 .gb4{
-    left: calc(var(--w)*55 + var(--w)/4);
+    transform: translate(calc(var(--w)*55.25), calc(var(--wm)*2))
 }
+
+
 .gb5{
     left: calc(var(--w)*80 + var(--w)/4);
     bottom: calc(var(--w)*6);
@@ -496,7 +511,7 @@
 }
 .rmshr1{
     bottom: calc(var(--w)*5.2);
-    left: calc(var(--w)*22.2 );
+    left: calc(var(--w)*23.8 );
 }
 
 /* Stars */

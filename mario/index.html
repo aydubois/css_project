@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    
+    <p id="counter"></p>
     <article class="body">
         <main tabindex="1" accesskey="z" >
             <input type="checkbox" id="start">
@@ -151,6 +151,9 @@
 
                 
                 <div class="c coin coin1"></div>
+                <div class="c coin coin2"></div>
+                <div class="c coin coin3"></div>
+                <div class="c coin coin4"></div>
                 
                 
                 <div class="c goomba gb1"></div>
@@ -367,4 +370,22 @@
         </main>
     </article>
 </body>
+<script type="text/javascript">
+    let isCliked = false
+    let counter = document.getElementById("counter")
+    let interval
+    let i = 0
+    document.addEventListener('click',()=>{
+        if(!isCliked){
+            isCliked = true
+            interval = setInterval(()=>{
+                i = i + 100
+                counter.textContent = i + ' ms'
+            },100)
+        }else{
+            isCliked = false
+            clearInterval(interval)
+        }
+    })
+</script>
 </html>
