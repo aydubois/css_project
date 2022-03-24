@@ -197,19 +197,23 @@ body:focus-within .mario::before{
     50% { transform: translate(calc(var(--w)*17),calc(var(--wm)*6));} 
     100% { transform: translate(calc(var(--w)*17),calc(var(--wm)*5));}
 }
+@keyframes upgift2{
+    0% { transform: translate(calc(var(--w)*24),calc(var(--wm)*5));}
+    50% { transform: translate(calc(var(--w)*24),calc(var(--wm)*5.5));} 
+    100% { transform: translate(calc(var(--w)*24),calc(var(--wm)*5));}
+}
 
-
-@keyframes upgiftbis{
-    from { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));}
-    15%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*10));}
-    35%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));}
-    40%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));}
-    50%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*10));}
-    65%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));} 
-    70%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));} 
-    80%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*10));}
-    95%  { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));}
-    100% { transform: translate(calc(var(--w)*17),calc(var(--wm)*9));}
+@keyframes upgift3{
+    from { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));}
+    15%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*10));}
+    35%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));}
+    40%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));}
+    50%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*10));}
+    65%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));} 
+    70%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));} 
+    80%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*10));}
+    95%  { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));}
+    100% { transform: translate(calc(var(--w)*23),calc(var(--wm)*9));}
 }
 
 @keyframes upcoin1{
@@ -225,66 +229,49 @@ body:focus-within .mario::before{
 
 /* TODO : continuer à modifier avec des translate les animations -> plus performants pour le navigateur */
 @keyframes upcoin2{
-    from{ z-index: -1;}
-    50%  { 
-        bottom:calc(var(--w)*9);
-        z-index: -1;
+    from { 
+        transform: translate(calc(var(--w)*23.3),calc(var(--wm)*9));
+        opacity: 0;
     }
-    60%{ z-index: 3;}
-    70%  { bottom:calc(var(--w)*12);} 
-    90%  { bottom:calc(var(--w)*10.5);}
-    100%{ opacity: hidden;}
+    30%{ transform: translate(calc(var(--w)*23.3),calc(var(--wm)*11.6));
+        z-index: 3;
+        opacity: 1;
+    }
+    50%  { transform: translate(calc(var(--w)*23.3),calc(var(--wm)*12.2));} 
+    100%{ transform: translate(calc(var(--w)*23.3),calc(var(--wm)*9));
+        opacity: hidden;
+    }
 }
 @keyframes upmushroom1 {
-    from{
-        transform: scale(.5);
+    from { transform: translate(calc(var(--w)*24),calc(var(--wm)*5.1));
+    z-index: -1;}
+    99%{
+        z-index: -1; 
     }
-    50%{
-        bottom:calc(var(--w)*5);
-        z-index: -1;
-
-    }
-    80%{
-        transform: scale(1);
+    to {
+        transform: translate(calc(var(--w)*24),calc(var(--wm)*6));
         z-index: 1;
-        bottom:calc(var(--w)*6);
-    }
-    to{
-        bottom:calc(var(--w)*6);
-        z-index: 1;
-        transform: scale(1);
     }
 }
 @keyframes runmushroom1 {
-    from{
-        left: calc(var(--w)*23.8 );
-    }
-    30%{
-        left: calc(var(--w)*20 );
-        bottom:calc(var(--w)*6);
-    }
-    40%{
-        bottom:calc(var(--w)*2);
-        left: calc(var(--w)*19 );
-    }
-    to{
-        bottom:calc(var(--w)*2);
-        left: calc(var(--w)*0 );
-
-    }
+    from{ transform: translate(calc(var(--w)*24),calc(var(--wm)*6));z-index: 1;}
+    30%{ transform: translate(calc(var(--w)*20),calc(var(--wm)*6));z-index: 1;}
+    40%{ transform: translate(calc(var(--w)*19),calc(var(--wm)*2));z-index: 1;}
+    to{ transform: translate(calc(var(--w)*0),calc(var(--wm)*2));z-index: 1;}
 }
 body:focus-within .coin1{
-    animation: .5s linear 3.6s 1 normal forwards running upcoin1;
+    animation: .5s linear 3.7s 1 normal forwards running upcoin1;
 }
 body:focus-within .gwl1{
-    animation: .5s linear 3.6s 1 normal forwards running upgift;
+    animation: .5s linear 3.7s 1 normal forwards running upgift;
 }
 body:focus-within .gwl1:before{
-    animation: .5s linear 3.6s 1 normal forwards running upgiftbefore;
+    animation: .5s linear 3.7s 1 normal forwards running upgiftbefore;
 
 } 
 body:focus-within .ewl1{
-    animation: .5s linear 3.8s 1 normal forwards running upgiftbefore2;
+    animation: .5s linear 3.7s 1 normal forwards running upgift,
+                .5s linear 3.9s 1 normal forwards running upgiftbefore2;
 }
 
 body:focus-within .rmshr1{
@@ -292,34 +279,36 @@ body:focus-within .rmshr1{
                 9s linear 8.3s 1 normal forwards running runmushroom1;
 }
 body:focus-within .gwl3{
-    animation: 1s linear 7.3s 1 normal forwards running upgift;
+    animation: 1s linear 7.3s 1 normal forwards running upgift2;
 }
 body:focus-within .gwl3:before{
     animation: 1s linear 7.3s 1 normal forwards running upgiftbefore;
 
 } 
 body:focus-within .ewl3{
-    animation: 1s linear 7.3s 1 normal forwards running upgiftbefore2;
+    animation: 1s linear 7.3s 1 normal forwards running upgift2,
+                1s linear 7.3s 1 normal forwards running upgiftbefore2;
 }
 
 body:focus-within .coin2{
-    animation: 1s linear 13.5s 1 normal forwards running upcoin2;
+    animation: 1s linear 12s 1 normal forwards running upcoin2;
 }
 body:focus-within .coin3{
-    animation: 1s linear 16s 1 normal forwards running upcoin2;
+    animation: 1s linear 13s 1 normal forwards running upcoin2;
 }
 body:focus-within .coin4{
-    animation: 1s linear 14.8s 1 normal forwards running upcoin2;
+    animation: 1s linear 14s 1 normal forwards running upcoin2;
 }
 body:focus-within .gwl4{
-    animation: 3.5s linear 13.9s 1 normal forwards running upgiftbis;
+    animation: 3.5s linear 12s 1 normal forwards running upgift3;
 }
 body:focus-within .gwl4:before{
-    animation: 1s linear 16.5s 1 normal forwards running upgiftbefore;
+    animation: 1s linear 14s 1 normal forwards running upgiftbefore;
 
 } 
 body:focus-within .ewl4{
-    animation: 1s linear 16.5s 1 normal forwards running upgiftbefore2;
+    animation:  3.5s linear 12s 1 normal forwards running upgift3,
+                1s linear 14s 1 normal forwards running upgiftbefore2;
 }
 /*** GOOMBAS ***/
 @keyframes goomba1{
@@ -482,3 +471,26 @@ body:focus-within .mario{
                
                 ;
 } */
+
+
+
+@keyframes go {
+    
+    from{
+        transform: translateX(0);
+    }
+    16.5%{
+        transform: translateX(calc(var(--wm)*13));
+    }
+    30%{
+        transform: translateX(calc(var(--wm)*13));
+    }
+
+    to{
+        transform: translateX(calc(var(--wm)*210));
+    }
+} 
+body:focus-within section{
+    left:0;
+    animation: 60s linear 0s 1 normal forwards running go;
+} 
